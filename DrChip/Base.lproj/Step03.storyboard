@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="x1p-vh-f93">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Step031VC-->
+        <scene sceneID="UTd-nY-q1p">
+            <objects>
+                <viewController storyboardIdentifier="step03_1" id="x1p-vh-f93" customClass="Step03_1VC" customModule="DrChip" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="q0K-4t-Pl4"/>
+                        <viewControllerLayoutGuide type="bottom" id="lVk-0J-jLN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HL0-iI-7he">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="APP-step-3-1st-Base-N.png" translatesAutoresizingMaskIntoConstraints="NO" id="sIy-GW-u9c">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPC-sQ-ywY">
+                                <rect key="frame" x="105.99999999999999" y="544" width="58.666666666666643" height="178"/>
+                                <connections>
+                                    <action selector="step02Click:" destination="x1p-vh-f93" eventType="touchUpInside" id="coW-8H-z5v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvt-q6-62A">
+                                <rect key="frame" x="132.33333333333331" y="24" width="149.33333333333331" height="151"/>
+                                <state key="normal" backgroundImage="human.png"/>
+                                <connections>
+                                    <action selector="humanClick:" destination="x1p-vh-f93" eventType="touchUpInside" id="dFf-CT-x7c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOJ-Iq-By0">
+                                <rect key="frame" x="49.333333333333343" y="189.66666666666669" width="150" height="150.66666666666669"/>
+                                <state key="normal" backgroundImage="livestock.png"/>
+                                <connections>
+                                    <action selector="livestockClick:" destination="x1p-vh-f93" eventType="touchUpInside" id="dMX-nd-4wt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTE-tX-IRz">
+                                <rect key="frame" x="225" y="189.66666666666669" width="150" height="150.66666666666669"/>
+                                <state key="normal" backgroundImage="poultry.png"/>
+                                <connections>
+                                    <action selector="poultryClick:" destination="x1p-vh-f93" eventType="touchUpInside" id="wqX-ki-a2Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXe-SY-fU1">
+                                <rect key="frame" x="49.333333333333343" y="358.66666666666669" width="150" height="151"/>
+                                <state key="normal" backgroundImage="aquatic.png"/>
+                                <connections>
+                                    <action selector="aquaticClick:" destination="x1p-vh-f93" eventType="touchUpInside" id="iQf-6X-wED"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJX-wQ-lLv">
+                                <rect key="frame" x="225" y="358.66666666666669" width="150" height="151"/>
+                                <state key="normal" backgroundImage="bee.png"/>
+                                <connections>
+                                    <action selector="beeproductClick:" destination="x1p-vh-f93" eventType="touchUpInside" id="xbj-SA-MIt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PTE-tX-IRz" firstAttribute="width" secondItem="sIy-GW-u9c" secondAttribute="width" multiplier="0.363" id="5YC-R9-GTY"/>
+                            <constraint firstItem="jvt-q6-62A" firstAttribute="centerY" secondItem="HL0-iI-7he" secondAttribute="centerY" multiplier="0.27" id="89R-bP-2Or"/>
+                            <constraint firstItem="EXe-SY-fU1" firstAttribute="width" secondItem="sIy-GW-u9c" secondAttribute="width" multiplier="0.363" id="COP-3B-3ag"/>
+                            <constraint firstItem="EXe-SY-fU1" firstAttribute="height" secondItem="sIy-GW-u9c" secondAttribute="height" multiplier="0.21" id="IjR-vk-OjF"/>
+                            <constraint firstItem="jvt-q6-62A" firstAttribute="centerX" secondItem="HL0-iI-7he" secondAttribute="centerX" id="Izu-Xz-jcm"/>
+                            <constraint firstItem="vPC-sQ-ywY" firstAttribute="width" secondItem="sIy-GW-u9c" secondAttribute="width" multiplier="59/414" id="Je1-Zt-tkX"/>
+                            <constraint firstItem="sIy-GW-u9c" firstAttribute="top" secondItem="q0K-4t-Pl4" secondAttribute="bottom" id="MoH-wn-20C"/>
+                            <constraint firstItem="vPC-sQ-ywY" firstAttribute="centerY" secondItem="HL0-iI-7he" secondAttribute="centerY" multiplier="1.72" id="OZR-PP-G3T"/>
+                            <constraint firstItem="EXe-SY-fU1" firstAttribute="centerX" secondItem="HL0-iI-7he" secondAttribute="centerX" multiplier="0.6" id="U0r-WR-lLm"/>
+                            <constraint firstItem="RJX-wQ-lLv" firstAttribute="centerX" secondItem="HL0-iI-7he" secondAttribute="centerX" multiplier="1.45" id="Uwc-9E-VeZ"/>
+                            <constraint firstItem="RJX-wQ-lLv" firstAttribute="height" secondItem="sIy-GW-u9c" secondAttribute="height" multiplier="0.21" id="VFF-LT-BLW"/>
+                            <constraint firstItem="RJX-wQ-lLv" firstAttribute="width" secondItem="sIy-GW-u9c" secondAttribute="width" multiplier="0.363" id="Vxn-XD-Fwa"/>
+                            <constraint firstItem="sIy-GW-u9c" firstAttribute="leading" secondItem="HL0-iI-7he" secondAttribute="leading" id="YxR-nV-Cya"/>
+                            <constraint firstItem="lOJ-Iq-By0" firstAttribute="centerY" secondItem="HL0-iI-7he" secondAttribute="centerY" multiplier="0.72" id="acT-9k-ise"/>
+                            <constraint firstItem="vPC-sQ-ywY" firstAttribute="centerX" secondItem="HL0-iI-7he" secondAttribute="centerX" multiplier="0.654" id="cA2-83-sEH"/>
+                            <constraint firstItem="jvt-q6-62A" firstAttribute="height" secondItem="sIy-GW-u9c" secondAttribute="height" multiplier="0.21" id="dXL-Zp-O2R"/>
+                            <constraint firstItem="PTE-tX-IRz" firstAttribute="centerY" secondItem="HL0-iI-7he" secondAttribute="centerY" multiplier="0.72" id="e8Q-bZ-Uxc"/>
+                            <constraint firstItem="PTE-tX-IRz" firstAttribute="centerX" secondItem="HL0-iI-7he" secondAttribute="centerX" multiplier="1.45" id="eJi-qL-mDh"/>
+                            <constraint firstItem="jvt-q6-62A" firstAttribute="width" secondItem="sIy-GW-u9c" secondAttribute="width" multiplier="0.363" id="fOT-7M-cYp"/>
+                            <constraint firstItem="lOJ-Iq-By0" firstAttribute="centerX" secondItem="HL0-iI-7he" secondAttribute="centerX" multiplier="0.6" id="iXJ-Df-euq"/>
+                            <constraint firstItem="EXe-SY-fU1" firstAttribute="centerY" secondItem="HL0-iI-7he" secondAttribute="centerY" multiplier="1.18" id="lnc-Lh-7Fu"/>
+                            <constraint firstItem="RJX-wQ-lLv" firstAttribute="centerY" secondItem="HL0-iI-7he" secondAttribute="centerY" multiplier="1.18" id="oc4-VA-8YQ"/>
+                            <constraint firstItem="vPC-sQ-ywY" firstAttribute="height" secondItem="sIy-GW-u9c" secondAttribute="height" multiplier="178/716" id="sg5-pZ-WKn"/>
+                            <constraint firstAttribute="trailing" secondItem="sIy-GW-u9c" secondAttribute="trailing" id="tId-hD-jhC"/>
+                            <constraint firstItem="lOJ-Iq-By0" firstAttribute="width" secondItem="sIy-GW-u9c" secondAttribute="width" multiplier="0.363" id="uvR-a2-yL0"/>
+                            <constraint firstItem="PTE-tX-IRz" firstAttribute="height" secondItem="sIy-GW-u9c" secondAttribute="height" multiplier="0.21" id="veZ-ZX-kqU"/>
+                            <constraint firstItem="lVk-0J-jLN" firstAttribute="top" secondItem="sIy-GW-u9c" secondAttribute="bottom" id="w6O-A1-9fY"/>
+                            <constraint firstItem="lOJ-Iq-By0" firstAttribute="height" secondItem="sIy-GW-u9c" secondAttribute="height" multiplier="0.21" id="yWN-dQ-mo9"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="aa4-w1-8Xk" appends="YES" id="7f4-v8-cAb"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="aquaticButton" destination="EXe-SY-fU1" id="f9S-1m-lhq"/>
+                        <outlet property="beeButton" destination="RJX-wQ-lLv" id="PC9-8L-3qG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cIv-JZ-bjA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="aa4-w1-8Xk">
+                    <connections>
+                        <action selector="swipeBack:" destination="x1p-vh-f93" id="Y42-w9-epi"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="904" y="139"/>
+        </scene>
+        <!--Step032 livestock-->
+        <scene sceneID="eVb-d8-MYH">
+            <objects>
+                <viewController storyboardIdentifier="step03_2_livestock" id="apV-cv-wLp" customClass="Step03_2_livestock" customModule="DrChip" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zMn-Ah-T07"/>
+                        <viewControllerLayoutGuide type="bottom" id="3ae-2y-yVt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vp5-mS-sDv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_step_3_2nd_livestock_base_s.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vjg-5i-Wpo">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="py5-S9-DQw">
+                                <rect key="frame" x="64" y="49.666666666666657" width="286" height="445.33333333333337"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="yIT-iU-Rc8">
+                                        <rect key="frame" x="0.0" y="0.0" width="286" height="128.33333333333334"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5YS-oL-sNz">
+                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128.33333333333334"/>
+                                                <state key="normal" backgroundImage="goat_s.png"/>
+                                                <connections>
+                                                    <action selector="buttonsClick:" destination="apV-cv-wLp" eventType="touchUpInside" id="4GL-RT-UBE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jb9-Ec-Ore">
+                                                <rect key="frame" x="158" y="0.0" width="128" height="128.33333333333334"/>
+                                                <state key="normal" backgroundImage="beef_s.png"/>
+                                                <connections>
+                                                    <action selector="buttonsClick:" destination="apV-cv-wLp" eventType="touchUpInside" id="f66-Lu-HkX"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="RlX-lj-K98">
+                                        <rect key="frame" x="0.0" y="158.33333333333334" width="286" height="128.66666666666666"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0HT-LZ-kq7">
+                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128.66666666666669"/>
+                                                <state key="normal" backgroundImage="cow_s.png"/>
+                                                <connections>
+                                                    <action selector="buttonsClick:" destination="apV-cv-wLp" eventType="touchUpInside" id="4dK-QL-87B"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Zs-92-UUQ">
+                                                <rect key="frame" x="158" y="0.0" width="128" height="128.66666666666669"/>
+                                                <state key="normal" backgroundImage="horse_s.png"/>
+                                                <connections>
+                                                    <action selector="buttonsClick:" destination="apV-cv-wLp" eventType="touchUpInside" id="kyO-ZV-boe"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="10F-ys-Ksv">
+                                        <rect key="frame" x="0.0" y="317" width="286" height="128.33333333333331"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lsa-jf-phm">
+                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128.33333333333331"/>
+                                                <state key="normal" backgroundImage="sheep_s.png"/>
+                                                <connections>
+                                                    <action selector="buttonsClick:" destination="apV-cv-wLp" eventType="touchUpInside" id="zDj-NX-nSC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1v-u7-TFb">
+                                                <rect key="frame" x="158" y="0.0" width="128" height="128.33333333333331"/>
+                                                <state key="normal" backgroundImage="pig_s.png"/>
+                                                <connections>
+                                                    <action selector="buttonsClick:" destination="apV-cv-wLp" eventType="touchUpInside" id="bvp-o3-0zF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3ae-2y-yVt" firstAttribute="top" secondItem="vjg-5i-Wpo" secondAttribute="bottom" id="DHx-kR-xca"/>
+                            <constraint firstItem="py5-S9-DQw" firstAttribute="centerX" secondItem="vp5-mS-sDv" secondAttribute="centerX" id="KPb-BM-Ypj"/>
+                            <constraint firstItem="py5-S9-DQw" firstAttribute="width" secondItem="vjg-5i-Wpo" secondAttribute="width" multiplier="0.69" id="No3-bd-G5p"/>
+                            <constraint firstItem="py5-S9-DQw" firstAttribute="centerY" secondItem="vp5-mS-sDv" secondAttribute="centerY" multiplier="0.74" id="Vff-tp-sqh"/>
+                            <constraint firstItem="vjg-5i-Wpo" firstAttribute="top" secondItem="zMn-Ah-T07" secondAttribute="bottom" id="W01-aD-oCQ"/>
+                            <constraint firstItem="vjg-5i-Wpo" firstAttribute="leading" secondItem="vp5-mS-sDv" secondAttribute="leading" id="ZnU-aZ-GZw"/>
+                            <constraint firstItem="py5-S9-DQw" firstAttribute="height" secondItem="vjg-5i-Wpo" secondAttribute="height" multiplier="0.622" id="mtT-0C-DNk"/>
+                            <constraint firstAttribute="trailing" secondItem="vjg-5i-Wpo" secondAttribute="trailing" id="oeu-m2-2TZ"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="N5c-g4-Bgs" appends="YES" id="Cpv-PE-IDd"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CMb-pL-3ak" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="N5c-g4-Bgs">
+                    <connections>
+                        <action selector="swipeBack:" destination="apV-cv-wLp" id="V6A-tZ-EOd"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1986" y="-536"/>
+        </scene>
+        <!--Step033 human-->
+        <scene sceneID="8wM-3p-I9c">
+            <objects>
+                <viewController storyboardIdentifier="step03_3_human" id="nBk-zg-e4G" customClass="Step03_3_human" customModule="DrChip" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="at6-Ws-F5B"/>
+                        <viewControllerLayoutGuide type="bottom" id="IVC-WD-NWU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DNu-T2-sCb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="APP-step-3-3rd-human-base.png" translatesAutoresizingMaskIntoConstraints="NO" id="baY-Ma-EG2">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="SBl-Gz-Mpo">
+                                <rect key="frame" x="142.66666666666669" y="151.00000000000003" width="128.66666666666669" height="286.66666666666674"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1g-pM-cXK">
+                                        <rect key="frame" x="0.0" y="0.0" width="128.66666666666666" height="128.33333333333331"/>
+                                        <state key="normal" backgroundImage="血液-Blood-S.png"/>
+                                        <connections>
+                                            <action selector="sampleClick:" destination="nBk-zg-e4G" eventType="touchUpInside" id="8sE-uJ-y1d"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dq-DR-LzE">
+                                        <rect key="frame" x="0.0" y="158.33333333333331" width="128.66666666666666" height="128.33333333333337"/>
+                                        <state key="normal" backgroundImage="尿液-Urine-S.png"/>
+                                        <connections>
+                                            <action selector="sampleClick:" destination="nBk-zg-e4G" eventType="touchUpInside" id="XHj-Vs-VqW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SBl-Gz-Mpo" firstAttribute="centerX" secondItem="DNu-T2-sCb" secondAttribute="centerX" id="2Ia-sd-CeV"/>
+                            <constraint firstAttribute="trailing" secondItem="baY-Ma-EG2" secondAttribute="trailing" id="4zu-sF-gJp"/>
+                            <constraint firstItem="SBl-Gz-Mpo" firstAttribute="width" secondItem="baY-Ma-EG2" secondAttribute="width" multiplier="0.31" id="5OW-aM-D1n"/>
+                            <constraint firstItem="baY-Ma-EG2" firstAttribute="top" secondItem="at6-Ws-F5B" secondAttribute="bottom" id="LsS-XM-KAF"/>
+                            <constraint firstItem="SBl-Gz-Mpo" firstAttribute="centerY" secondItem="DNu-T2-sCb" secondAttribute="centerY" multiplier="0.8" id="frd-js-AHq"/>
+                            <constraint firstItem="baY-Ma-EG2" firstAttribute="leading" secondItem="DNu-T2-sCb" secondAttribute="leading" id="hv5-o6-cGF"/>
+                            <constraint firstItem="SBl-Gz-Mpo" firstAttribute="height" secondItem="baY-Ma-EG2" secondAttribute="height" multiplier="0.4" id="pSm-Qa-IAb"/>
+                            <constraint firstItem="IVC-WD-NWU" firstAttribute="top" secondItem="baY-Ma-EG2" secondAttribute="bottom" id="uay-mO-8C7"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="1A3-jp-AaC" appends="YES" id="k8g-BR-hlM"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OKQ-Et-okb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="1A3-jp-AaC">
+                    <connections>
+                        <action selector="swipeBack:" destination="nBk-zg-e4G" id="ere-7H-kIl"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2880" y="-1246"/>
+        </scene>
+        <!--Step033 livestock-->
+        <scene sceneID="pbb-6x-xwr">
+            <objects>
+                <viewController storyboardIdentifier="step03_3_livestock" id="Pco-8n-VhV" customClass="Step03_3_livestock" customModule="DrChip" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9oJ-pd-d5R"/>
+                        <viewControllerLayoutGuide type="bottom" id="8je-lR-ZSo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="u2e-ct-KUQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="APP-Step-3-2nd-Livestock-base-S.png" translatesAutoresizingMaskIntoConstraints="NO" id="VZM-JI-4v7">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="QFK-Ah-MV1">
+                                <rect key="frame" x="64.333333333333314" y="210.00000000000003" width="285.33333333333337" height="286.66666666666674"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="nrZ-2V-cJ8">
+                                        <rect key="frame" x="0.0" y="0.0" width="285.33333333333337" height="128.33333333333331"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMK-45-Uoa">
+                                                <rect key="frame" x="0.0" y="0.0" width="127.66666666666667" height="128.33333333333331"/>
+                                                <state key="normal" backgroundImage="畜血液-livestock-blood-S.png"/>
+                                                <connections>
+                                                    <action selector="sampleClick:" destination="Pco-8n-VhV" eventType="touchUpInside" id="X6A-Af-ZEt"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OoV-xE-QhP">
+                                                <rect key="frame" x="157.66666666666669" y="0.0" width="127.66666666666669" height="128.33333333333331"/>
+                                                <state key="normal" backgroundImage="畜組織-livestock-tissue-S.png"/>
+                                                <connections>
+                                                    <action selector="sampleClick:" destination="Pco-8n-VhV" eventType="touchUpInside" id="3GB-ug-pJb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="314-1e-wIk">
+                                        <rect key="frame" x="0.0" y="158.33333333333331" width="285.33333333333337" height="128.33333333333337"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRZ-Uh-bnr">
+                                                <rect key="frame" x="0.0" y="0.0" width="127.66666666666667" height="128.33333333333337"/>
+                                                <state key="normal" backgroundImage="畜尿液-livestock-urine-S.png"/>
+                                                <connections>
+                                                    <action selector="sampleClick:" destination="Pco-8n-VhV" eventType="touchUpInside" id="9lX-Zt-UGz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jjt-BN-6xE">
+                                                <rect key="frame" x="157.66666666666669" y="0.0" width="127.66666666666669" height="128.33333333333337"/>
+                                                <state key="normal" backgroundImage="畜飼料-livestock-feed-S.png"/>
+                                                <connections>
+                                                    <action selector="sampleClick:" destination="Pco-8n-VhV" eventType="touchUpInside" id="wI6-vG-GQd"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frG-aR-ym5">
+                                <rect key="frame" x="143" y="53.666666666666657" width="128" height="128"/>
+                                <state key="normal" backgroundImage="畜乳汁-livestock-Milk-S.png"/>
+                                <connections>
+                                    <action selector="sampleClick:" destination="Pco-8n-VhV" eventType="touchUpInside" id="BSH-J0-USX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QFK-Ah-MV1" firstAttribute="centerX" secondItem="u2e-ct-KUQ" secondAttribute="centerX" id="5p1-At-gUr"/>
+                            <constraint firstItem="frG-aR-ym5" firstAttribute="centerX" secondItem="u2e-ct-KUQ" secondAttribute="centerX" id="75y-CA-aTB"/>
+                            <constraint firstItem="frG-aR-ym5" firstAttribute="centerY" secondItem="u2e-ct-KUQ" secondAttribute="centerY" multiplier="0.32" id="7c7-Rp-hea"/>
+                            <constraint firstItem="8je-lR-ZSo" firstAttribute="top" secondItem="VZM-JI-4v7" secondAttribute="bottom" id="7l6-vX-ECw"/>
+                            <constraint firstItem="VZM-JI-4v7" firstAttribute="top" secondItem="9oJ-pd-d5R" secondAttribute="bottom" id="MKJ-Hw-TsN"/>
+                            <constraint firstItem="QFK-Ah-MV1" firstAttribute="centerY" secondItem="u2e-ct-KUQ" secondAttribute="centerY" multiplier="0.96" id="Qt8-TP-Ygx"/>
+                            <constraint firstItem="VZM-JI-4v7" firstAttribute="leading" secondItem="u2e-ct-KUQ" secondAttribute="leading" id="euh-Su-SAD"/>
+                            <constraint firstAttribute="trailing" secondItem="VZM-JI-4v7" secondAttribute="trailing" id="loh-sh-9zJ"/>
+                            <constraint firstItem="frG-aR-ym5" firstAttribute="width" secondItem="VZM-JI-4v7" secondAttribute="width" multiplier="128/414" id="mAG-0u-DUp"/>
+                            <constraint firstItem="QFK-Ah-MV1" firstAttribute="width" secondItem="VZM-JI-4v7" secondAttribute="width" multiplier="0.69" id="uni-ns-Ufi"/>
+                            <constraint firstItem="frG-aR-ym5" firstAttribute="height" secondItem="VZM-JI-4v7" secondAttribute="height" multiplier="128/716" id="wJw-Ua-VH7"/>
+                            <constraint firstItem="QFK-Ah-MV1" firstAttribute="height" secondItem="VZM-JI-4v7" secondAttribute="height" multiplier="0.4" id="zWF-zK-dNH"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="GR5-Qg-rnT" appends="YES" id="4l1-nc-1bg"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mhm-Cf-zQ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="GR5-Qg-rnT">
+                    <connections>
+                        <action selector="swipeBack:" destination="Pco-8n-VhV" id="Jjd-Ud-Y9U"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2880" y="-536"/>
+        </scene>
+        <!--Step032 poultry-->
+        <scene sceneID="EZ9-ip-yzU">
+            <objects>
+                <viewController storyboardIdentifier="step03_2_poultry" id="HxU-Cu-h78" customClass="Step03_2_poultry" customModule="DrChip" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sqV-5f-PG6"/>
+                        <viewControllerLayoutGuide type="bottom" id="Srk-fq-TqC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yNP-gB-DSw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_step_3_2nd_poultry_base.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="b9k-Vo-lDW">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="IlU-y8-og8">
+                                <rect key="frame" x="64" y="129.00000000000003" width="286" height="286.66666666666674"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="bNX-UV-fDw">
+                                        <rect key="frame" x="0.0" y="0.0" width="286" height="128.33333333333331"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vG4-Rs-Gya">
+                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128.33333333333331"/>
+                                                <state key="normal" backgroundImage="turkey_s.png"/>
+                                                <connections>
+                                                    <action selector="buttonsClick:" destination="HxU-Cu-h78" eventType="touchUpInside" id="ELa-JR-qH7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VeQ-l8-a1x">
+                                                <rect key="frame" x="158" y="0.0" width="128" height="128.33333333333331"/>
+                                                <state key="normal" backgroundImage="duck_s.png"/>
+                                                <connections>
+                                                    <action selector="buttonsClick:" destination="HxU-Cu-h78" eventType="touchUpInside" id="tb5-wb-IsW"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="etx-RN-SMA">
+                                        <rect key="frame" x="0.0" y="158.33333333333331" width="286" height="128.33333333333337"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lO-1V-xUs">
+                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128.33333333333337"/>
+                                                <state key="normal" backgroundImage="chicken_s.png"/>
+                                                <connections>
+                                                    <action selector="buttonsClick:" destination="HxU-Cu-h78" eventType="touchUpInside" id="var-El-lWk"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ce9-Yy-60z">
+                                                <rect key="frame" x="158" y="0.0" width="128" height="128.33333333333337"/>
+                                                <state key="normal" backgroundImage="goose_s.png"/>
+                                                <connections>
+                                                    <action selector="buttonsClick:" destination="HxU-Cu-h78" eventType="touchUpInside" id="zBA-Lk-61u"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IlU-y8-og8" firstAttribute="centerY" secondItem="yNP-gB-DSw" secondAttribute="centerY" multiplier="0.74" id="15h-KO-F2F"/>
+                            <constraint firstItem="IlU-y8-og8" firstAttribute="centerX" secondItem="yNP-gB-DSw" secondAttribute="centerX" id="1ao-Cm-X2g"/>
+                            <constraint firstItem="IlU-y8-og8" firstAttribute="width" secondItem="b9k-Vo-lDW" secondAttribute="width" multiplier="0.69" id="DNg-5g-G8U"/>
+                            <constraint firstItem="b9k-Vo-lDW" firstAttribute="leading" secondItem="yNP-gB-DSw" secondAttribute="leading" id="Iv6-V1-Aaz"/>
+                            <constraint firstItem="IlU-y8-og8" firstAttribute="height" secondItem="b9k-Vo-lDW" secondAttribute="height" multiplier="0.4" id="Jo6-Xo-knJ"/>
+                            <constraint firstItem="b9k-Vo-lDW" firstAttribute="top" secondItem="sqV-5f-PG6" secondAttribute="bottom" id="kSy-Jp-AVl"/>
+                            <constraint firstItem="Srk-fq-TqC" firstAttribute="top" secondItem="b9k-Vo-lDW" secondAttribute="bottom" id="yj8-tp-sXF"/>
+                            <constraint firstAttribute="trailing" secondItem="b9k-Vo-lDW" secondAttribute="trailing" id="zlt-H3-8x5"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="qgk-JO-TkU" appends="YES" id="s6O-ne-cZe"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CHn-J3-wtq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="qgk-JO-TkU">
+                    <connections>
+                        <action selector="swipeBack:" destination="HxU-Cu-h78" id="5Wb-0K-sIu"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1986" y="157"/>
+        </scene>
+        <!--Step033 poultry-->
+        <scene sceneID="Sgt-3e-PrM">
+            <objects>
+                <viewController storyboardIdentifier="step03_3_poultry" id="MIO-qc-0Wb" customClass="Step03_3_poultry" customModule="DrChip" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Apf-kV-cHm"/>
+                        <viewControllerLayoutGuide type="bottom" id="23d-zC-VEt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="D1M-xo-3B1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="APP-Step-3-poultry-base-S.png" translatesAutoresizingMaskIntoConstraints="NO" id="8JU-xI-gHC">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Krg-RU-0JI">
+                                <rect key="frame" x="64.333333333333314" y="129.00000000000003" width="285.33333333333337" height="286.66666666666674"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="VIp-rx-Abw">
+                                        <rect key="frame" x="0.0" y="0.0" width="285.33333333333337" height="128.33333333333331"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WF6-hN-gAW">
+                                                <rect key="frame" x="0.0" y="0.0" width="127.66666666666667" height="128.33333333333331"/>
+                                                <state key="normal" backgroundImage="禽血液-poultry-blood-S.png"/>
+                                                <connections>
+                                                    <action selector="sampleClick:" destination="MIO-qc-0Wb" eventType="touchUpInside" id="lEX-xf-G4U"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YnH-CC-pQD">
+                                                <rect key="frame" x="157.66666666666669" y="0.0" width="127.66666666666669" height="128.33333333333331"/>
+                                                <state key="normal" backgroundImage="禽組織-poultry-tissue-S.png"/>
+                                                <connections>
+                                                    <action selector="sampleClick:" destination="MIO-qc-0Wb" eventType="touchUpInside" id="Gql-4v-n8D"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="q93-LF-wgX">
+                                        <rect key="frame" x="0.0" y="158.33333333333331" width="285.33333333333337" height="128.33333333333337"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Yv-XP-Kgs">
+                                                <rect key="frame" x="0.0" y="0.0" width="127.66666666666667" height="128.33333333333337"/>
+                                                <state key="normal" backgroundImage="禽蛋-poultry-egg-S.png"/>
+                                                <connections>
+                                                    <action selector="sampleClick:" destination="MIO-qc-0Wb" eventType="touchUpInside" id="yih-rK-DJx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBb-lw-NcY">
+                                                <rect key="frame" x="157.66666666666669" y="0.0" width="127.66666666666669" height="128.33333333333337"/>
+                                                <state key="normal" backgroundImage="禽飼料-poultry-feed-S.png"/>
+                                                <connections>
+                                                    <action selector="sampleClick:" destination="MIO-qc-0Wb" eventType="touchUpInside" id="uQX-g3-4g2"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="23d-zC-VEt" firstAttribute="top" secondItem="8JU-xI-gHC" secondAttribute="bottom" id="5kd-oV-DoQ"/>
+                            <constraint firstItem="Krg-RU-0JI" firstAttribute="height" secondItem="8JU-xI-gHC" secondAttribute="height" multiplier="0.4" id="7Hj-S1-ZFj"/>
+                            <constraint firstItem="8JU-xI-gHC" firstAttribute="top" secondItem="Apf-kV-cHm" secondAttribute="bottom" id="DFC-vX-hli"/>
+                            <constraint firstItem="8JU-xI-gHC" firstAttribute="leading" secondItem="D1M-xo-3B1" secondAttribute="leading" id="Q2o-Bo-V0i"/>
+                            <constraint firstItem="Krg-RU-0JI" firstAttribute="centerY" secondItem="D1M-xo-3B1" secondAttribute="centerY" multiplier="0.74" id="o1d-bc-EQU"/>
+                            <constraint firstItem="Krg-RU-0JI" firstAttribute="width" secondItem="8JU-xI-gHC" secondAttribute="width" multiplier="0.69" id="pJ6-2v-qv0"/>
+                            <constraint firstAttribute="trailing" secondItem="8JU-xI-gHC" secondAttribute="trailing" id="pfd-nW-sJ6"/>
+                            <constraint firstItem="Krg-RU-0JI" firstAttribute="centerX" secondItem="D1M-xo-3B1" secondAttribute="centerX" id="yvN-OF-9de"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="nsO-hB-ZkK" appends="YES" id="SP3-G2-o1I"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nto-2p-7Cn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="nsO-hB-ZkK">
+                    <connections>
+                        <action selector="swipeBack:" destination="MIO-qc-0Wb" id="5gf-en-eDY"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2880" y="157"/>
+        </scene>
+        <!--Step033 aquatic-->
+        <scene sceneID="2U4-VP-Dpx">
+            <objects>
+                <viewController storyboardIdentifier="step03_3_aquatic" id="4ik-Zq-fLL" customClass="Step03_3_aquatic" customModule="DrChip" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ddX-Md-B79"/>
+                        <viewControllerLayoutGuide type="bottom" id="pVH-He-iND"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fB4-eH-6Yy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="APP-step3-2nd-aquatic-base-S.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Ic-NQ-Exi">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="0xq-Ej-wIh">
+                                <rect key="frame" x="143" y="224.66666666666669" width="128.66666666666669" height="286.66666666666663"/>
+                                <subviews>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmI-v7-Jdb">
+                                        <rect key="frame" x="0.0" y="0.0" width="128.66666666666669" height="128.33333333333334"/>
+                                        <state key="normal" backgroundImage="組織-Tissue.png"/>
+                                        <connections>
+                                            <action selector="sampleClick:" destination="4ik-Zq-fLL" eventType="touchUpInside" id="188-xH-8YL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfq-vO-4oM">
+                                        <rect key="frame" x="0.0" y="158.33333333333334" width="128.66666666666669" height="128.33333333333329"/>
+                                        <state key="normal" backgroundImage="飼料-Feed-S.png"/>
+                                        <connections>
+                                            <action selector="sampleClick:" destination="4ik-Zq-fLL" eventType="touchUpInside" id="rlx-ui-ZLE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7Ic-NQ-Exi" firstAttribute="top" secondItem="ddX-Md-B79" secondAttribute="bottom" id="6mc-mf-LNT"/>
+                            <constraint firstItem="0xq-Ej-wIh" firstAttribute="centerX" secondItem="fB4-eH-6Yy" secondAttribute="centerX" id="ETZ-xV-C7e"/>
+                            <constraint firstAttribute="trailing" secondItem="7Ic-NQ-Exi" secondAttribute="trailing" id="IfP-zR-adX"/>
+                            <constraint firstItem="7Ic-NQ-Exi" firstAttribute="leading" secondItem="fB4-eH-6Yy" secondAttribute="leading" id="Jme-Dp-6dt"/>
+                            <constraint firstItem="0xq-Ej-wIh" firstAttribute="width" secondItem="7Ic-NQ-Exi" secondAttribute="width" multiplier="0.31" id="MqI-Ol-UgW"/>
+                            <constraint firstItem="pVH-He-iND" firstAttribute="top" secondItem="7Ic-NQ-Exi" secondAttribute="bottom" id="SKX-2c-e68"/>
+                            <constraint firstItem="0xq-Ej-wIh" firstAttribute="centerY" secondItem="fB4-eH-6Yy" secondAttribute="centerY" id="g1p-Dy-mCc"/>
+                            <constraint firstItem="0xq-Ej-wIh" firstAttribute="height" secondItem="7Ic-NQ-Exi" secondAttribute="height" multiplier="0.4" id="hoo-3D-UGE"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Kd1-eb-CgE" appends="YES" id="RYw-qc-vkw"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="39l-46-VM8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="Kd1-eb-CgE">
+                    <connections>
+                        <action selector="swipeBack:" destination="4ik-Zq-fLL" id="2Zb-jA-vJP"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2880" y="883"/>
+        </scene>
+        <!--Step033 beeproduct-->
+        <scene sceneID="3dW-T1-hbS">
+            <objects>
+                <viewController storyboardIdentifier="step03_3_beeproduct" id="1jd-A9-Yqw" customClass="Step03_3_beeproduct" customModule="DrChip" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ar0-Tr-431"/>
+                        <viewControllerLayoutGuide type="bottom" id="rpD-kR-X1l"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="91I-Ai-Mgd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="APP-step-3-3rd-beeproduct-base.png" translatesAutoresizingMaskIntoConstraints="NO" id="iwQ-dW-aNS">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="KTF-Xz-Elu">
+                                <rect key="frame" x="143" y="224.66666666666669" width="128.66666666666669" height="286.66666666666663"/>
+                                <subviews>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K16-Pt-PPF">
+                                        <rect key="frame" x="0.0" y="0.0" width="128.66666666666669" height="128.33333333333334"/>
+                                        <state key="normal" backgroundImage="蜂蜜-Honey.png"/>
+                                        <connections>
+                                            <action selector="sampleClick:" destination="1jd-A9-Yqw" eventType="touchUpInside" id="xDs-Ed-tfT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWx-f1-NNQ">
+                                        <rect key="frame" x="0.0" y="158.33333333333334" width="128.66666666666669" height="128.33333333333329"/>
+                                        <state key="normal" backgroundImage="蜂王漿-Royal-Jelly-S.png"/>
+                                        <connections>
+                                            <action selector="sampleClick:" destination="1jd-A9-Yqw" eventType="touchUpInside" id="He8-bj-sTr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KTF-Xz-Elu" firstAttribute="height" secondItem="iwQ-dW-aNS" secondAttribute="height" multiplier="0.4" id="6IW-lV-LBv"/>
+                            <constraint firstItem="KTF-Xz-Elu" firstAttribute="width" secondItem="iwQ-dW-aNS" secondAttribute="width" multiplier="0.31" id="8un-r0-Daz"/>
+                            <constraint firstItem="iwQ-dW-aNS" firstAttribute="leading" secondItem="91I-Ai-Mgd" secondAttribute="leading" id="AEu-f0-0bx"/>
+                            <constraint firstAttribute="trailing" secondItem="iwQ-dW-aNS" secondAttribute="trailing" id="N5p-lD-QAz"/>
+                            <constraint firstItem="KTF-Xz-Elu" firstAttribute="centerX" secondItem="91I-Ai-Mgd" secondAttribute="centerX" id="OgZ-TY-EYd"/>
+                            <constraint firstItem="rpD-kR-X1l" firstAttribute="top" secondItem="iwQ-dW-aNS" secondAttribute="bottom" id="ogJ-Qx-bHh"/>
+                            <constraint firstItem="KTF-Xz-Elu" firstAttribute="centerY" secondItem="91I-Ai-Mgd" secondAttribute="centerY" id="y1l-vr-UgW"/>
+                            <constraint firstItem="iwQ-dW-aNS" firstAttribute="top" secondItem="Ar0-Tr-431" secondAttribute="bottom" id="yuE-fX-Xgj"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="kPF-nr-25O" appends="YES" id="KB1-AN-yYX"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eX4-2R-6d0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="kPF-nr-25O">
+                    <connections>
+                        <action selector="swipeBack:" destination="1jd-A9-Yqw" id="RBY-dz-ERa"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2880" y="1593"/>
+        </scene>
+        <!--Step032 aquatic-->
+        <scene sceneID="9kK-5N-py3">
+            <objects>
+                <viewController storyboardIdentifier="step03_2_aquatic" id="nQG-Ti-JHE" customClass="Step03_2_aquatic" customModule="DrChip" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KGH-ug-vla"/>
+                        <viewControllerLayoutGuide type="bottom" id="79Z-gi-MLV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ave-ga-4Q4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_step3_2nd_aquatic_base_s.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="361-UY-y7S">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="gbm-yv-3rX">
+                                <rect key="frame" x="64" y="224.66666666666669" width="286" height="286.66666666666663"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="aRO-pk-xl7">
+                                        <rect key="frame" x="0.0" y="0.0" width="286" height="128.33333333333334"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fso-xI-hfr">
+                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128.33333333333334"/>
+                                                <state key="normal" backgroundImage="fish_s.png"/>
+                                                <connections>
+                                                    <action selector="buttononsClick:" destination="nQG-Ti-JHE" eventType="touchUpInside" id="Est-C5-2d9"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cV-9o-ZcH">
+                                                <rect key="frame" x="158" y="0.0" width="128" height="128.33333333333334"/>
+                                                <state key="normal" backgroundImage="shrimp_s.png"/>
+                                                <connections>
+                                                    <action selector="buttononsClick:" destination="nQG-Ti-JHE" eventType="touchUpInside" id="0MQ-wo-cTi"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="u0a-30-VrQ">
+                                        <rect key="frame" x="0.0" y="158.33333333333334" width="286" height="128.33333333333329"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ju1-4v-79Y">
+                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128.33333333333331"/>
+                                                <state key="normal" backgroundImage="turtle_s.png"/>
+                                                <connections>
+                                                    <action selector="buttononsClick:" destination="nQG-Ti-JHE" eventType="touchUpInside" id="vav-0t-gWT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vI7-Hn-iZw">
+                                                <rect key="frame" x="158" y="0.0" width="128" height="128.33333333333331"/>
+                                                <state key="normal" backgroundImage="crab_s.png"/>
+                                                <connections>
+                                                    <action selector="buttononsClick:" destination="nQG-Ti-JHE" eventType="touchUpInside" id="BRe-6Y-SHs"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gbm-yv-3rX" firstAttribute="height" secondItem="361-UY-y7S" secondAttribute="height" multiplier="0.4" id="3V1-cN-inS"/>
+                            <constraint firstAttribute="trailing" secondItem="361-UY-y7S" secondAttribute="trailing" id="Nef-vm-dSH"/>
+                            <constraint firstItem="gbm-yv-3rX" firstAttribute="centerX" secondItem="Ave-ga-4Q4" secondAttribute="centerX" id="Wh5-Bb-KA6"/>
+                            <constraint firstItem="361-UY-y7S" firstAttribute="leading" secondItem="Ave-ga-4Q4" secondAttribute="leading" id="aDR-u6-pWT"/>
+                            <constraint firstItem="gbm-yv-3rX" firstAttribute="centerY" secondItem="Ave-ga-4Q4" secondAttribute="centerY" id="iLY-Mh-3pN"/>
+                            <constraint firstItem="gbm-yv-3rX" firstAttribute="width" secondItem="361-UY-y7S" secondAttribute="width" multiplier="0.69" id="kEO-Du-U3O"/>
+                            <constraint firstItem="361-UY-y7S" firstAttribute="top" secondItem="KGH-ug-vla" secondAttribute="bottom" id="oKx-Nt-aeB"/>
+                            <constraint firstItem="79Z-gi-MLV" firstAttribute="top" secondItem="361-UY-y7S" secondAttribute="bottom" id="sUW-46-5sF"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Ep4-pA-f7I" appends="YES" id="jnw-9c-lNA"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yIu-78-lQ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="Ep4-pA-f7I">
+                    <connections>
+                        <action selector="swipeBack:" destination="nQG-Ti-JHE" id="f2E-1Y-lhO"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1986" y="883"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="APP-Step-3-2nd-Livestock-base-S.png" width="400" height="712"/>
+        <image name="APP-Step-3-poultry-base-S.png" width="400" height="712"/>
+        <image name="APP-step-3-1st-Base-N.png" width="1080" height="1920"/>
+        <image name="APP-step-3-3rd-beeproduct-base.png" width="400" height="710"/>
+        <image name="APP-step-3-3rd-human-base.png" width="400" height="712"/>
+        <image name="APP-step3-2nd-aquatic-base-S.png" width="400" height="712"/>
+        <image name="app_step3_2nd_aquatic_base_s.jpg" width="400" height="712"/>
+        <image name="app_step_3_2nd_livestock_base_s.jpg" width="400" height="712"/>
+        <image name="app_step_3_2nd_poultry_base.jpg" width="401" height="712"/>
+        <image name="aquatic.png" width="128" height="128"/>
+        <image name="bee.png" width="128" height="128"/>
+        <image name="beef_s.png" width="128" height="128"/>
+        <image name="chicken_s.png" width="128" height="128"/>
+        <image name="cow_s.png" width="128" height="128"/>
+        <image name="crab_s.png" width="128" height="128"/>
+        <image name="duck_s.png" width="128" height="128"/>
+        <image name="fish_s.png" width="128" height="128"/>
+        <image name="goat_s.png" width="128" height="128"/>
+        <image name="goose_s.png" width="128" height="128"/>
+        <image name="horse_s.png" width="128" height="128"/>
+        <image name="human.png" width="128" height="128"/>
+        <image name="livestock.png" width="128" height="128"/>
+        <image name="pig_s.png" width="128" height="128"/>
+        <image name="poultry.png" width="128" height="128"/>
+        <image name="sheep_s.png" width="128" height="128"/>
+        <image name="shrimp_s.png" width="128" height="128"/>
+        <image name="turkey_s.png" width="128" height="128"/>
+        <image name="turtle_s.png" width="128" height="128"/>
+        <image name="尿液-Urine-S.png" width="129" height="129"/>
+        <image name="畜乳汁-livestock-Milk-S.png" width="128" height="129"/>
+        <image name="畜尿液-livestock-urine-S.png" width="129" height="129"/>
+        <image name="畜組織-livestock-tissue-S.png" width="129" height="129"/>
+        <image name="畜血液-livestock-blood-S.png" width="128" height="128"/>
+        <image name="畜飼料-livestock-feed-S.png" width="129" height="129"/>
+        <image name="禽組織-poultry-tissue-S.png" width="129" height="129"/>
+        <image name="禽蛋-poultry-egg-S.png" width="128" height="129"/>
+        <image name="禽血液-poultry-blood-S.png" width="128" height="128"/>
+        <image name="禽飼料-poultry-feed-S.png" width="129" height="129"/>
+        <image name="組織-Tissue.png" width="129" height="129"/>
+        <image name="蜂王漿-Royal-Jelly-S.png" width="130" height="129"/>
+        <image name="蜂蜜-Honey.png" width="129" height="129"/>
+        <image name="血液-Blood-S.png" width="129" height="129"/>
+        <image name="飼料-Feed-S.png" width="128" height="129"/>
+    </resources>
+</document>

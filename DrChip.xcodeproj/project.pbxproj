@@ -1,0 +1,1134 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E10E32DE1F57B07F00AF83A7 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10E32DD1F57B07F00AF83A7 /* CameraController.swift */; };
+		E10E32E21F57B24400AF83A7 /* CameraButton.png in Resources */ = {isa = PBXBuildFile; fileRef = E10E32DF1F57B24400AF83A7 /* CameraButton.png */; };
+		E10E32E31F57B24400AF83A7 /* CameraButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E10E32E01F57B24400AF83A7 /* CameraButton@2x.png */; };
+		E10E32E41F57B24400AF83A7 /* CameraButton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E10E32E11F57B24400AF83A7 /* CameraButton@3x.png */; };
+		E10EB6BA1F4CDEC9007762B4 /* QRScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10EB6B91F4CDEC9007762B4 /* QRScannerController.swift */; };
+		E111CC871F413E790050DC78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E111CC861F413E790050DC78 /* AppDelegate.swift */; };
+		E111CC891F413E790050DC78 /* Step01VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E111CC881F413E790050DC78 /* Step01VC.swift */; };
+		E111CC8C1F413E790050DC78 /* Step01.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E111CC8A1F413E790050DC78 /* Step01.storyboard */; };
+		E111CC8E1F413E790050DC78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E111CC8D1F413E790050DC78 /* Assets.xcassets */; };
+		E111CC911F413E790050DC78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E111CC8F1F413E790050DC78 /* LaunchScreen.storyboard */; };
+		E111CC9C1F4141A20050DC78 /* login_fb.png in Resources */ = {isa = PBXBuildFile; fileRef = E111CC991F4141A20050DC78 /* login_fb.png */; };
+		E111CC9D1F4141A20050DC78 /* login_google.png in Resources */ = {isa = PBXBuildFile; fileRef = E111CC9A1F4141A20050DC78 /* login_google.png */; };
+		E111CC9E1F4141A20050DC78 /* login_twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = E111CC9B1F4141A20050DC78 /* login_twitter.png */; };
+		E111CCAC1F4149CA0050DC78 /* app_step_2_show.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E111CCAB1F4149CA0050DC78 /* app_step_2_show.jpg */; };
+		E117765C1F47DF440085D750 /* Step04.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E117765A1F47DF440085D750 /* Step04.storyboard */; };
+		E117765E1F47E0F40085D750 /* Step04.swift in Sources */ = {isa = PBXBuildFile; fileRef = E117765D1F47E0F40085D750 /* Step04.swift */; };
+		E11776611F47E6D80085D750 /* APP-step4-blood-timing.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776601F47E6D80085D750 /* APP-step4-blood-timing.png */; };
+		E11776651F47E6E70085D750 /* APP-step4-02-blood-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776621F47E6E70085D750 /* APP-step4-02-blood-01.png */; };
+		E11776661F47E6E70085D750 /* APP-step4-02-blood-02.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776631F47E6E70085D750 /* APP-step4-02-blood-02.png */; };
+		E11776671F47E6E70085D750 /* APP-step4-02-blood-03.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776641F47E6E70085D750 /* APP-step4-02-blood-03.png */; };
+		E117766B1F47E6FD0085D750 /* APP-step4-03-blood-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776681F47E6FD0085D750 /* APP-step4-03-blood-01.png */; };
+		E117766C1F47E6FD0085D750 /* APP-step4-03-blood-02.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776691F47E6FD0085D750 /* APP-step4-03-blood-02.png */; };
+		E117766D1F47E6FD0085D750 /* APP-step4-03-blood-03.png in Resources */ = {isa = PBXBuildFile; fileRef = E117766A1F47E6FD0085D750 /* APP-step4-03-blood-03.png */; };
+		E11776701F47E70F0085D750 /* APP-step4-04-blood-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E117766E1F47E70F0085D750 /* APP-step4-04-blood-01.png */; };
+		E11776711F47E70F0085D750 /* APP-step4-04-blood-02.png in Resources */ = {isa = PBXBuildFile; fileRef = E117766F1F47E70F0085D750 /* APP-step4-04-blood-02.png */; };
+		E11776751F47F3E70085D750 /* APP-step4-02-egg-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776721F47F3E70085D750 /* APP-step4-02-egg-01.png */; };
+		E11776761F47F3E70085D750 /* APP-step4-02-egg-02.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776731F47F3E70085D750 /* APP-step4-02-egg-02.png */; };
+		E11776771F47F3E70085D750 /* APP-step4-02-egg-03.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776741F47F3E70085D750 /* APP-step4-02-egg-03.png */; };
+		E11776791F47F3F30085D750 /* APP-step4-egg-timing.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776781F47F3F30085D750 /* APP-step4-egg-timing.png */; };
+		E117767D1F47F40D0085D750 /* APP-step4-03-egg-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E117767A1F47F40D0085D750 /* APP-step4-03-egg-01.png */; };
+		E117767E1F47F40D0085D750 /* APP-step4-03-egg-02.png in Resources */ = {isa = PBXBuildFile; fileRef = E117767B1F47F40D0085D750 /* APP-step4-03-egg-02.png */; };
+		E117767F1F47F40D0085D750 /* APP-step4-03-egg-03.png in Resources */ = {isa = PBXBuildFile; fileRef = E117767C1F47F40D0085D750 /* APP-step4-03-egg-03.png */; };
+		E11776821F47F4260085D750 /* APP-step4-04-egg-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776801F47F4260085D750 /* APP-step4-04-egg-01.png */; };
+		E11776831F47F4260085D750 /* APP-step4-04-egg-02.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776811F47F4260085D750 /* APP-step4-04-egg-02.png */; };
+		E117768B1F47F7100085D750 /* APP-step4-02-feed-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776871F47F7100085D750 /* APP-step4-02-feed-01.png */; };
+		E117768C1F47F7100085D750 /* APP-step4-02-feed-02.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776881F47F7100085D750 /* APP-step4-02-feed-02.png */; };
+		E117768D1F47F7100085D750 /* APP-step4-02-feed-03.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776891F47F7100085D750 /* APP-step4-02-feed-03.png */; };
+		E117768E1F47F7100085D750 /* APP-step4-02-feed-04.png in Resources */ = {isa = PBXBuildFile; fileRef = E117768A1F47F7100085D750 /* APP-step4-02-feed-04.png */; };
+		E11776901F47F71A0085D750 /* APP-step4-feed-timing.png in Resources */ = {isa = PBXBuildFile; fileRef = E117768F1F47F71A0085D750 /* APP-step4-feed-timing.png */; };
+		E11776961F47F7680085D750 /* APP-step4-03-feed-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776921F47F7680085D750 /* APP-step4-03-feed-01.png */; };
+		E11776971F47F7680085D750 /* APP-step4-03-feed-02.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776931F47F7680085D750 /* APP-step4-03-feed-02.png */; };
+		E11776981F47F7680085D750 /* APP-step4-03-feed-03.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776941F47F7680085D750 /* APP-step4-03-feed-03.png */; };
+		E11776991F47F7680085D750 /* APP-step4-03-feed-04.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776951F47F7680085D750 /* APP-step4-03-feed-04.png */; };
+		E117769D1F47F77F0085D750 /* APP-step4-04-feed-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E117769A1F47F77F0085D750 /* APP-step4-04-feed-01.png */; };
+		E117769E1F47F77F0085D750 /* APP-step4-04-feed-02.png in Resources */ = {isa = PBXBuildFile; fileRef = E117769B1F47F77F0085D750 /* APP-step4-04-feed-02.png */; };
+		E117769F1F47F77F0085D750 /* APP-step4-04-feed-03.png in Resources */ = {isa = PBXBuildFile; fileRef = E117769C1F47F77F0085D750 /* APP-step4-04-feed-03.png */; };
+		E11776A31F47F79E0085D750 /* APP-step4-02-honey-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776A01F47F79E0085D750 /* APP-step4-02-honey-01.png */; };
+		E11776A41F47F79E0085D750 /* APP-step4-02-honey-02.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776A11F47F79E0085D750 /* APP-step4-02-honey-02.png */; };
+		E11776A51F47F79E0085D750 /* APP-step4-honey-timing.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776A21F47F79E0085D750 /* APP-step4-honey-timing.png */; };
+		E11776A91F47F7B10085D750 /* APP-step4-03-honey-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776A61F47F7B10085D750 /* APP-step4-03-honey-01.png */; };
+		E11776AA1F47F7B10085D750 /* APP-step4-03-honey-02.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776A71F47F7B10085D750 /* APP-step4-03-honey-02.png */; };
+		E11776AB1F47F7B10085D750 /* APP-step4-03-honey-03.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776A81F47F7B10085D750 /* APP-step4-03-honey-03.png */; };
+		E11776B01F47F7C10085D750 /* APP-step4-04-honey-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776AC1F47F7C10085D750 /* APP-step4-04-honey-01.png */; };
+		E11776B11F47F7C10085D750 /* APP-step4-04-honey-02.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776AD1F47F7C10085D750 /* APP-step4-04-honey-02.png */; };
+		E11776B21F47F7C10085D750 /* APP-step4-04-honey-03.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776AE1F47F7C10085D750 /* APP-step4-04-honey-03.png */; };
+		E11776B31F47F7C10085D750 /* APP-step4-04-honey-04.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776AF1F47F7C10085D750 /* APP-step4-04-honey-04.png */; };
+		E11776B81F47F8180085D750 /* APP-step4-02-milk-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776B51F47F8180085D750 /* APP-step4-02-milk-01.png */; };
+		E11776B91F47F8180085D750 /* APP-step4-02-milk-02.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776B61F47F8180085D750 /* APP-step4-02-milk-02.png */; };
+		E11776BA1F47F8180085D750 /* APP-step4-milk-timing.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776B71F47F8180085D750 /* APP-step4-milk-timing.png */; };
+		E11776BD1F47F96C0085D750 /* APP-step4-04-milk-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776BB1F47F96C0085D750 /* APP-step4-04-milk-01.png */; };
+		E11776BE1F47F96C0085D750 /* APP-step4-04-milk-02.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776BC1F47F96C0085D750 /* APP-step4-04-milk-02.png */; };
+		E11776C51F47F9EE0085D750 /* APP-step4-02-royal-jelly-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776C01F47F9EE0085D750 /* APP-step4-02-royal-jelly-01.png */; };
+		E11776C61F47F9EE0085D750 /* APP-step4-02-royal-jelly-02.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776C11F47F9EE0085D750 /* APP-step4-02-royal-jelly-02.png */; };
+		E11776C71F47F9EE0085D750 /* APP-step4-02-royal-jelly-03.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776C21F47F9EE0085D750 /* APP-step4-02-royal-jelly-03.png */; };
+		E11776C81F47F9EE0085D750 /* APP-step4-02-royal-jelly-04.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776C31F47F9EE0085D750 /* APP-step4-02-royal-jelly-04.png */; };
+		E11776C91F47F9EE0085D750 /* APP-step4-royal-jelly-timing.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776C41F47F9EE0085D750 /* APP-step4-royal-jelly-timing.png */; };
+		E11776CE1F47FA010085D750 /* APP-step4-03-royal-jelly-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776CA1F47FA010085D750 /* APP-step4-03-royal-jelly-01.png */; };
+		E11776CF1F47FA010085D750 /* APP-step4-03-royal-jelly-02.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776CB1F47FA010085D750 /* APP-step4-03-royal-jelly-02.png */; };
+		E11776D01F47FA010085D750 /* APP-step4-03-royal-jelly-03.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776CC1F47FA010085D750 /* APP-step4-03-royal-jelly-03.png */; };
+		E11776D11F47FA010085D750 /* APP-step4-03-royal-jelly-04.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776CD1F47FA010085D750 /* APP-step4-03-royal-jelly-04.png */; };
+		E11776D51F47FA110085D750 /* APP-step4-04-royal-jelly-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776D21F47FA110085D750 /* APP-step4-04-royal-jelly-01.png */; };
+		E11776D61F47FA110085D750 /* APP-step4-04-royal-jelly-02.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776D31F47FA110085D750 /* APP-step4-04-royal-jelly-02.png */; };
+		E11776D71F47FA110085D750 /* APP-step4-04-royal-jelly-03.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776D41F47FA110085D750 /* APP-step4-04-royal-jelly-03.png */; };
+		E11776DE1F47FA4D0085D750 /* APP-step4-02-tissue-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776D91F47FA4D0085D750 /* APP-step4-02-tissue-01.png */; };
+		E11776DF1F47FA4D0085D750 /* APP-step4-02-tissue-02.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776DA1F47FA4D0085D750 /* APP-step4-02-tissue-02.png */; };
+		E11776E01F47FA4D0085D750 /* APP-step4-02-tissue-03.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776DB1F47FA4D0085D750 /* APP-step4-02-tissue-03.png */; };
+		E11776E11F47FA4D0085D750 /* APP-step4-02-tissue-04.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776DC1F47FA4D0085D750 /* APP-step4-02-tissue-04.png */; };
+		E11776E21F47FA4D0085D750 /* APP-step4-tissue-timing.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776DD1F47FA4D0085D750 /* APP-step4-tissue-timing.png */; };
+		E11776E71F47FA5E0085D750 /* APP-step4-03-tissue-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776E31F47FA5E0085D750 /* APP-step4-03-tissue-01.png */; };
+		E11776E81F47FA5E0085D750 /* APP-step4-03-tissue-02.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776E41F47FA5E0085D750 /* APP-step4-03-tissue-02.png */; };
+		E11776E91F47FA5E0085D750 /* APP-step4-03-tissue-03.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776E51F47FA5E0085D750 /* APP-step4-03-tissue-03.png */; };
+		E11776EA1F47FA5E0085D750 /* APP-step4-03-tissue-04.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776E61F47FA5E0085D750 /* APP-step4-03-tissue-04.png */; };
+		E11776EE1F47FA6E0085D750 /* APP-step4-04-tissue-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776EB1F47FA6E0085D750 /* APP-step4-04-tissue-01.png */; };
+		E11776EF1F47FA6E0085D750 /* APP-step4-04-tissue-02.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776EC1F47FA6E0085D750 /* APP-step4-04-tissue-02.png */; };
+		E11776F01F47FA6E0085D750 /* APP-step4-04-tissue-03.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776ED1F47FA6E0085D750 /* APP-step4-04-tissue-03.png */; };
+		E11776F51F47FA970085D750 /* APP-step4-02-urine-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776F21F47FA970085D750 /* APP-step4-02-urine-01.png */; };
+		E11776F61F47FA970085D750 /* APP-step4-02-urine-02.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776F31F47FA970085D750 /* APP-step4-02-urine-02.png */; };
+		E11776F71F47FA970085D750 /* APP-step4-urine-timing.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776F41F47FA970085D750 /* APP-step4-urine-timing.png */; };
+		E11776FA1F47FAAA0085D750 /* APP-step4-03-urine-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776F81F47FAAA0085D750 /* APP-step4-03-urine-01.png */; };
+		E11776FB1F47FAAA0085D750 /* APP-step4-03-urine-02.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776F91F47FAAA0085D750 /* APP-step4-03-urine-02.png */; };
+		E11776FD1F47FAB90085D750 /* APP-step4-04-urine-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776FC1F47FAB90085D750 /* APP-step4-04-urine-01.png */; };
+		E11777001F47FB100085D750 /* APP-step4-03-milk-01.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776FE1F47FB100085D750 /* APP-step4-03-milk-01.png */; };
+		E11777011F47FB100085D750 /* APP-step4-03-milk-02.png in Resources */ = {isa = PBXBuildFile; fileRef = E11776FF1F47FB100085D750 /* APP-step4-03-milk-02.png */; };
+		E11777141F4850E40085D750 /* APP-step-3-1st-Base-N.png in Resources */ = {isa = PBXBuildFile; fileRef = E11777131F4850E40085D750 /* APP-step-3-1st-Base-N.png */; };
+		E13E1B581F41734E006BFD75 /* step_base.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1B571F41734E006BFD75 /* step_base.png */; };
+		E13E1B5E1F4174EB006BFD75 /* aquatic.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1B591F4174EB006BFD75 /* aquatic.png */; };
+		E13E1B5F1F4174EB006BFD75 /* bee.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1B5A1F4174EB006BFD75 /* bee.png */; };
+		E13E1B601F4174EB006BFD75 /* human.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1B5B1F4174EB006BFD75 /* human.png */; };
+		E13E1B611F4174EB006BFD75 /* livestock.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1B5C1F4174EB006BFD75 /* livestock.png */; };
+		E13E1B621F4174EB006BFD75 /* poultry.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1B5D1F4174EB006BFD75 /* poultry.png */; };
+		E13E1B641F417808006BFD75 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1B631F417808006BFD75 /* logo.png */; };
+		E13E1B671F42ACBE006BFD75 /* Step03.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E13E1B651F42ACBE006BFD75 /* Step03.storyboard */; };
+		E13E1B691F42AD21006BFD75 /* Step02.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E13E1B681F42AD21006BFD75 /* Step02.storyboard */; };
+		E13E1B6B1F42AE8A006BFD75 /* Step02VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13E1B6A1F42AE8A006BFD75 /* Step02VC.swift */; };
+		E13E1B6D1F42B7BF006BFD75 /* Step03_1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13E1B6C1F42B7BF006BFD75 /* Step03_1VC.swift */; };
+		E13E1B731F42BF96006BFD75 /* app_step_3_2nd_livestock_base_s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E13E1B721F42BF96006BFD75 /* app_step_3_2nd_livestock_base_s.jpg */; };
+		E13E1B751F42BFA2006BFD75 /* app_step_3_2nd_poultry_base.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E13E1B741F42BFA2006BFD75 /* app_step_3_2nd_poultry_base.jpg */; };
+		E13E1B771F42BFB9006BFD75 /* app_step3_2nd_aquatic_base_s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E13E1B761F42BFB9006BFD75 /* app_step3_2nd_aquatic_base_s.jpg */; };
+		E13E1B7D1F42C0C0006BFD75 /* goat_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1B7C1F42C0C0006BFD75 /* goat_s.png */; };
+		E13E1B7F1F42C0D5006BFD75 /* beef_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1B7E1F42C0D5006BFD75 /* beef_s.png */; };
+		E13E1B811F42C0E1006BFD75 /* cow_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1B801F42C0E1006BFD75 /* cow_s.png */; };
+		E13E1B831F42C0EF006BFD75 /* horse_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1B821F42C0EF006BFD75 /* horse_s.png */; };
+		E13E1B851F42C104006BFD75 /* sheep_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1B841F42C104006BFD75 /* sheep_s.png */; };
+		E13E1B871F42C110006BFD75 /* pig_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1B861F42C110006BFD75 /* pig_s.png */; };
+		E13E1B891F42CFE9006BFD75 /* turkey_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1B881F42CFE9006BFD75 /* turkey_s.png */; };
+		E13E1B8B1F42CFFB006BFD75 /* duck_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1B8A1F42CFFB006BFD75 /* duck_s.png */; };
+		E13E1B8D1F42D00B006BFD75 /* chicken_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1B8C1F42D00B006BFD75 /* chicken_s.png */; };
+		E13E1B8F1F42D014006BFD75 /* goose_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1B8E1F42D014006BFD75 /* goose_s.png */; };
+		E13E1B911F42D1F5006BFD75 /* fish_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1B901F42D1F5006BFD75 /* fish_s.png */; };
+		E13E1B931F42D37D006BFD75 /* shrimp_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1B921F42D37D006BFD75 /* shrimp_s.png */; };
+		E13E1B951F42D390006BFD75 /* turtle_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1B941F42D390006BFD75 /* turtle_s.png */; };
+		E13E1B971F42D3AC006BFD75 /* crab_s.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1B961F42D3AC006BFD75 /* crab_s.png */; };
+		E13E1B9D1F42D7EB006BFD75 /* APP-step-3-3rd-human-base.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1B9C1F42D7EB006BFD75 /* APP-step-3-3rd-human-base.png */; };
+		E13E1B9F1F42D7F8006BFD75 /* 血液-Blood-S.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1B9E1F42D7F8006BFD75 /* 血液-Blood-S.png */; };
+		E13E1BA11F42D802006BFD75 /* 尿液-Urine-S.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1BA01F42D802006BFD75 /* 尿液-Urine-S.png */; };
+		E13E1BA31F42D85A006BFD75 /* APP-step3-2nd-aquatic-base-S.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1BA21F42D85A006BFD75 /* APP-step3-2nd-aquatic-base-S.png */; };
+		E13E1BA61F42D868006BFD75 /* 組織-Tissue.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1BA41F42D868006BFD75 /* 組織-Tissue.png */; };
+		E13E1BA71F42D868006BFD75 /* 飼料-Feed-S.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1BA51F42D868006BFD75 /* 飼料-Feed-S.png */; };
+		E13E1BA91F42D884006BFD75 /* APP-Step-3-2nd-Livestock-base-S.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1BA81F42D884006BFD75 /* APP-Step-3-2nd-Livestock-base-S.png */; };
+		E13E1BAF1F42D8A0006BFD75 /* 畜血液-livestock-blood-S.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1BAA1F42D8A0006BFD75 /* 畜血液-livestock-blood-S.png */; };
+		E13E1BB01F42D8A0006BFD75 /* 畜尿液-livestock-urine-S.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1BAB1F42D8A0006BFD75 /* 畜尿液-livestock-urine-S.png */; };
+		E13E1BB11F42D8A0006BFD75 /* 畜乳汁-livestock-Milk-S.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1BAC1F42D8A0006BFD75 /* 畜乳汁-livestock-Milk-S.png */; };
+		E13E1BB21F42D8A0006BFD75 /* 畜組織-livestock-tissue-S.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1BAD1F42D8A0006BFD75 /* 畜組織-livestock-tissue-S.png */; };
+		E13E1BB31F42D8A0006BFD75 /* 畜飼料-livestock-feed-S.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1BAE1F42D8A0006BFD75 /* 畜飼料-livestock-feed-S.png */; };
+		E13E1BB51F42D8EC006BFD75 /* APP-Step-3-poultry-base-S.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1BB41F42D8EC006BFD75 /* APP-Step-3-poultry-base-S.png */; };
+		E13E1BBA1F42D900006BFD75 /* 禽血液-poultry-blood-S.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1BB61F42D900006BFD75 /* 禽血液-poultry-blood-S.png */; };
+		E13E1BBB1F42D900006BFD75 /* 禽組織-poultry-tissue-S.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1BB71F42D900006BFD75 /* 禽組織-poultry-tissue-S.png */; };
+		E13E1BBC1F42D900006BFD75 /* 禽蛋-poultry-egg-S.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1BB81F42D900006BFD75 /* 禽蛋-poultry-egg-S.png */; };
+		E13E1BBD1F42D900006BFD75 /* 禽飼料-poultry-feed-S.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1BB91F42D900006BFD75 /* 禽飼料-poultry-feed-S.png */; };
+		E13E1BBF1F42D92E006BFD75 /* APP-step-3-3rd-beeproduct-base.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1BBE1F42D92E006BFD75 /* APP-step-3-3rd-beeproduct-base.png */; };
+		E13E1BC21F42D93D006BFD75 /* 蜂王漿-Royal-Jelly-S.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1BC01F42D93D006BFD75 /* 蜂王漿-Royal-Jelly-S.png */; };
+		E13E1BC31F42D93D006BFD75 /* 蜂蜜-Honey.png in Resources */ = {isa = PBXBuildFile; fileRef = E13E1BC11F42D93D006BFD75 /* 蜂蜜-Honey.png */; };
+		E13E1BC51F42E701006BFD75 /* Step03_2_livestock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13E1BC41F42E701006BFD75 /* Step03_2_livestock.swift */; };
+		E13E1BC71F42E8A1006BFD75 /* Step03_2_poultry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13E1BC61F42E8A1006BFD75 /* Step03_2_poultry.swift */; };
+		E13E1BC91F42E8EB006BFD75 /* Step03_2_aquatic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13E1BC81F42E8EB006BFD75 /* Step03_2_aquatic.swift */; };
+		E13E1C091F468CD9006BFD75 /* Step03_3_human.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13E1C081F468CD9006BFD75 /* Step03_3_human.swift */; };
+		E13E1C0B1F468CF8006BFD75 /* Step03_3_livestock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13E1C0A1F468CF8006BFD75 /* Step03_3_livestock.swift */; };
+		E13E1C0D1F468D16006BFD75 /* Step03_3_aquatic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13E1C0C1F468D16006BFD75 /* Step03_3_aquatic.swift */; };
+		E13E1C0F1F468D3B006BFD75 /* Step03_3_poultry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13E1C0E1F468D3B006BFD75 /* Step03_3_poultry.swift */; };
+		E13E1C111F468D5F006BFD75 /* Step03_3_beeproduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13E1C101F468D5F006BFD75 /* Step03_3_beeproduct.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E10E32DD1F57B07F00AF83A7 /* CameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		E10E32DF1F57B24400AF83A7 /* CameraButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CameraButton.png; path = "../../../../iOS 範例程式/AppCoda/iOS 10 App程式進階攻略 /Ch13 SimpleCamera/SimpleCamera/Assets.xcassets/CameraButton.imageset/CameraButton.png"; sourceTree = "<group>"; };
+		E10E32E01F57B24400AF83A7 /* CameraButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CameraButton@2x.png"; path = "../../../../iOS 範例程式/AppCoda/iOS 10 App程式進階攻略 /Ch13 SimpleCamera/SimpleCamera/Assets.xcassets/CameraButton.imageset/CameraButton@2x.png"; sourceTree = "<group>"; };
+		E10E32E11F57B24400AF83A7 /* CameraButton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CameraButton@3x.png"; path = "../../../../iOS 範例程式/AppCoda/iOS 10 App程式進階攻略 /Ch13 SimpleCamera/SimpleCamera/Assets.xcassets/CameraButton.imageset/CameraButton@3x.png"; sourceTree = "<group>"; };
+		E10EB6B91F4CDEC9007762B4 /* QRScannerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerController.swift; sourceTree = "<group>"; };
+		E111CC831F413E790050DC78 /* DrChip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrChip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E111CC861F413E790050DC78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E111CC881F413E790050DC78 /* Step01VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step01VC.swift; sourceTree = "<group>"; };
+		E111CC8B1F413E790050DC78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Step01.storyboard; sourceTree = "<group>"; };
+		E111CC8D1F413E790050DC78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E111CC901F413E790050DC78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E111CC921F413E790050DC78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E111CC991F4141A20050DC78 /* login_fb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_fb.png; sourceTree = "<group>"; };
+		E111CC9A1F4141A20050DC78 /* login_google.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_google.png; sourceTree = "<group>"; };
+		E111CC9B1F4141A20050DC78 /* login_twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_twitter.png; sourceTree = "<group>"; };
+		E111CCAB1F4149CA0050DC78 /* app_step_2_show.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = app_step_2_show.jpg; sourceTree = "<group>"; };
+		E117765B1F47DF440085D750 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Step04.storyboard; sourceTree = "<group>"; };
+		E117765D1F47E0F40085D750 /* Step04.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step04.swift; sourceTree = "<group>"; };
+		E11776601F47E6D80085D750 /* APP-step4-blood-timing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-blood-timing.png"; sourceTree = "<group>"; };
+		E11776621F47E6E70085D750 /* APP-step4-02-blood-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-02-blood-01.png"; sourceTree = "<group>"; };
+		E11776631F47E6E70085D750 /* APP-step4-02-blood-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-02-blood-02.png"; sourceTree = "<group>"; };
+		E11776641F47E6E70085D750 /* APP-step4-02-blood-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-02-blood-03.png"; sourceTree = "<group>"; };
+		E11776681F47E6FD0085D750 /* APP-step4-03-blood-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-03-blood-01.png"; sourceTree = "<group>"; };
+		E11776691F47E6FD0085D750 /* APP-step4-03-blood-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-03-blood-02.png"; sourceTree = "<group>"; };
+		E117766A1F47E6FD0085D750 /* APP-step4-03-blood-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-03-blood-03.png"; sourceTree = "<group>"; };
+		E117766E1F47E70F0085D750 /* APP-step4-04-blood-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-04-blood-01.png"; sourceTree = "<group>"; };
+		E117766F1F47E70F0085D750 /* APP-step4-04-blood-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-04-blood-02.png"; sourceTree = "<group>"; };
+		E11776721F47F3E70085D750 /* APP-step4-02-egg-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-02-egg-01.png"; sourceTree = "<group>"; };
+		E11776731F47F3E70085D750 /* APP-step4-02-egg-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-02-egg-02.png"; sourceTree = "<group>"; };
+		E11776741F47F3E70085D750 /* APP-step4-02-egg-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-02-egg-03.png"; sourceTree = "<group>"; };
+		E11776781F47F3F30085D750 /* APP-step4-egg-timing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-egg-timing.png"; sourceTree = "<group>"; };
+		E117767A1F47F40D0085D750 /* APP-step4-03-egg-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-03-egg-01.png"; sourceTree = "<group>"; };
+		E117767B1F47F40D0085D750 /* APP-step4-03-egg-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-03-egg-02.png"; sourceTree = "<group>"; };
+		E117767C1F47F40D0085D750 /* APP-step4-03-egg-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-03-egg-03.png"; sourceTree = "<group>"; };
+		E11776801F47F4260085D750 /* APP-step4-04-egg-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-04-egg-01.png"; sourceTree = "<group>"; };
+		E11776811F47F4260085D750 /* APP-step4-04-egg-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-04-egg-02.png"; sourceTree = "<group>"; };
+		E11776871F47F7100085D750 /* APP-step4-02-feed-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-02-feed-01.png"; sourceTree = "<group>"; };
+		E11776881F47F7100085D750 /* APP-step4-02-feed-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-02-feed-02.png"; sourceTree = "<group>"; };
+		E11776891F47F7100085D750 /* APP-step4-02-feed-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-02-feed-03.png"; sourceTree = "<group>"; };
+		E117768A1F47F7100085D750 /* APP-step4-02-feed-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-02-feed-04.png"; sourceTree = "<group>"; };
+		E117768F1F47F71A0085D750 /* APP-step4-feed-timing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-feed-timing.png"; sourceTree = "<group>"; };
+		E11776921F47F7680085D750 /* APP-step4-03-feed-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-03-feed-01.png"; sourceTree = "<group>"; };
+		E11776931F47F7680085D750 /* APP-step4-03-feed-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-03-feed-02.png"; sourceTree = "<group>"; };
+		E11776941F47F7680085D750 /* APP-step4-03-feed-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-03-feed-03.png"; sourceTree = "<group>"; };
+		E11776951F47F7680085D750 /* APP-step4-03-feed-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-03-feed-04.png"; sourceTree = "<group>"; };
+		E117769A1F47F77F0085D750 /* APP-step4-04-feed-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-04-feed-01.png"; sourceTree = "<group>"; };
+		E117769B1F47F77F0085D750 /* APP-step4-04-feed-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-04-feed-02.png"; sourceTree = "<group>"; };
+		E117769C1F47F77F0085D750 /* APP-step4-04-feed-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-04-feed-03.png"; sourceTree = "<group>"; };
+		E11776A01F47F79E0085D750 /* APP-step4-02-honey-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-02-honey-01.png"; sourceTree = "<group>"; };
+		E11776A11F47F79E0085D750 /* APP-step4-02-honey-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-02-honey-02.png"; sourceTree = "<group>"; };
+		E11776A21F47F79E0085D750 /* APP-step4-honey-timing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-honey-timing.png"; sourceTree = "<group>"; };
+		E11776A61F47F7B10085D750 /* APP-step4-03-honey-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-03-honey-01.png"; sourceTree = "<group>"; };
+		E11776A71F47F7B10085D750 /* APP-step4-03-honey-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-03-honey-02.png"; sourceTree = "<group>"; };
+		E11776A81F47F7B10085D750 /* APP-step4-03-honey-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-03-honey-03.png"; sourceTree = "<group>"; };
+		E11776AC1F47F7C10085D750 /* APP-step4-04-honey-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-04-honey-01.png"; sourceTree = "<group>"; };
+		E11776AD1F47F7C10085D750 /* APP-step4-04-honey-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-04-honey-02.png"; sourceTree = "<group>"; };
+		E11776AE1F47F7C10085D750 /* APP-step4-04-honey-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-04-honey-03.png"; sourceTree = "<group>"; };
+		E11776AF1F47F7C10085D750 /* APP-step4-04-honey-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-04-honey-04.png"; sourceTree = "<group>"; };
+		E11776B51F47F8180085D750 /* APP-step4-02-milk-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-02-milk-01.png"; sourceTree = "<group>"; };
+		E11776B61F47F8180085D750 /* APP-step4-02-milk-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-02-milk-02.png"; sourceTree = "<group>"; };
+		E11776B71F47F8180085D750 /* APP-step4-milk-timing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-milk-timing.png"; sourceTree = "<group>"; };
+		E11776BB1F47F96C0085D750 /* APP-step4-04-milk-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-04-milk-01.png"; sourceTree = "<group>"; };
+		E11776BC1F47F96C0085D750 /* APP-step4-04-milk-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-04-milk-02.png"; sourceTree = "<group>"; };
+		E11776C01F47F9EE0085D750 /* APP-step4-02-royal-jelly-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-02-royal-jelly-01.png"; sourceTree = "<group>"; };
+		E11776C11F47F9EE0085D750 /* APP-step4-02-royal-jelly-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-02-royal-jelly-02.png"; sourceTree = "<group>"; };
+		E11776C21F47F9EE0085D750 /* APP-step4-02-royal-jelly-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-02-royal-jelly-03.png"; sourceTree = "<group>"; };
+		E11776C31F47F9EE0085D750 /* APP-step4-02-royal-jelly-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-02-royal-jelly-04.png"; sourceTree = "<group>"; };
+		E11776C41F47F9EE0085D750 /* APP-step4-royal-jelly-timing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-royal-jelly-timing.png"; sourceTree = "<group>"; };
+		E11776CA1F47FA010085D750 /* APP-step4-03-royal-jelly-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-03-royal-jelly-01.png"; sourceTree = "<group>"; };
+		E11776CB1F47FA010085D750 /* APP-step4-03-royal-jelly-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-03-royal-jelly-02.png"; sourceTree = "<group>"; };
+		E11776CC1F47FA010085D750 /* APP-step4-03-royal-jelly-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-03-royal-jelly-03.png"; sourceTree = "<group>"; };
+		E11776CD1F47FA010085D750 /* APP-step4-03-royal-jelly-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-03-royal-jelly-04.png"; sourceTree = "<group>"; };
+		E11776D21F47FA110085D750 /* APP-step4-04-royal-jelly-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-04-royal-jelly-01.png"; sourceTree = "<group>"; };
+		E11776D31F47FA110085D750 /* APP-step4-04-royal-jelly-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-04-royal-jelly-02.png"; sourceTree = "<group>"; };
+		E11776D41F47FA110085D750 /* APP-step4-04-royal-jelly-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-04-royal-jelly-03.png"; sourceTree = "<group>"; };
+		E11776D91F47FA4D0085D750 /* APP-step4-02-tissue-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-02-tissue-01.png"; sourceTree = "<group>"; };
+		E11776DA1F47FA4D0085D750 /* APP-step4-02-tissue-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-02-tissue-02.png"; sourceTree = "<group>"; };
+		E11776DB1F47FA4D0085D750 /* APP-step4-02-tissue-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-02-tissue-03.png"; sourceTree = "<group>"; };
+		E11776DC1F47FA4D0085D750 /* APP-step4-02-tissue-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-02-tissue-04.png"; sourceTree = "<group>"; };
+		E11776DD1F47FA4D0085D750 /* APP-step4-tissue-timing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-tissue-timing.png"; sourceTree = "<group>"; };
+		E11776E31F47FA5E0085D750 /* APP-step4-03-tissue-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-03-tissue-01.png"; sourceTree = "<group>"; };
+		E11776E41F47FA5E0085D750 /* APP-step4-03-tissue-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-03-tissue-02.png"; sourceTree = "<group>"; };
+		E11776E51F47FA5E0085D750 /* APP-step4-03-tissue-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-03-tissue-03.png"; sourceTree = "<group>"; };
+		E11776E61F47FA5E0085D750 /* APP-step4-03-tissue-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-03-tissue-04.png"; sourceTree = "<group>"; };
+		E11776EB1F47FA6E0085D750 /* APP-step4-04-tissue-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-04-tissue-01.png"; sourceTree = "<group>"; };
+		E11776EC1F47FA6E0085D750 /* APP-step4-04-tissue-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-04-tissue-02.png"; sourceTree = "<group>"; };
+		E11776ED1F47FA6E0085D750 /* APP-step4-04-tissue-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-04-tissue-03.png"; sourceTree = "<group>"; };
+		E11776F21F47FA970085D750 /* APP-step4-02-urine-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-02-urine-01.png"; sourceTree = "<group>"; };
+		E11776F31F47FA970085D750 /* APP-step4-02-urine-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-02-urine-02.png"; sourceTree = "<group>"; };
+		E11776F41F47FA970085D750 /* APP-step4-urine-timing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-urine-timing.png"; sourceTree = "<group>"; };
+		E11776F81F47FAAA0085D750 /* APP-step4-03-urine-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-03-urine-01.png"; sourceTree = "<group>"; };
+		E11776F91F47FAAA0085D750 /* APP-step4-03-urine-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-03-urine-02.png"; sourceTree = "<group>"; };
+		E11776FC1F47FAB90085D750 /* APP-step4-04-urine-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-04-urine-01.png"; sourceTree = "<group>"; };
+		E11776FE1F47FB100085D750 /* APP-step4-03-milk-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-03-milk-01.png"; sourceTree = "<group>"; };
+		E11776FF1F47FB100085D750 /* APP-step4-03-milk-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step4-03-milk-02.png"; sourceTree = "<group>"; };
+		E11777131F4850E40085D750 /* APP-step-3-1st-Base-N.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step-3-1st-Base-N.png"; sourceTree = "<group>"; };
+		E13E1B571F41734E006BFD75 /* step_base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = step_base.png; sourceTree = "<group>"; };
+		E13E1B591F4174EB006BFD75 /* aquatic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aquatic.png; sourceTree = "<group>"; };
+		E13E1B5A1F4174EB006BFD75 /* bee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bee.png; sourceTree = "<group>"; };
+		E13E1B5B1F4174EB006BFD75 /* human.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = human.png; sourceTree = "<group>"; };
+		E13E1B5C1F4174EB006BFD75 /* livestock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = livestock.png; sourceTree = "<group>"; };
+		E13E1B5D1F4174EB006BFD75 /* poultry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poultry.png; sourceTree = "<group>"; };
+		E13E1B631F417808006BFD75 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		E13E1B661F42ACBE006BFD75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Step03.storyboard; sourceTree = "<group>"; };
+		E13E1B681F42AD21006BFD75 /* Step02.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Step02.storyboard; sourceTree = "<group>"; };
+		E13E1B6A1F42AE8A006BFD75 /* Step02VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step02VC.swift; sourceTree = "<group>"; };
+		E13E1B6C1F42B7BF006BFD75 /* Step03_1VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step03_1VC.swift; sourceTree = "<group>"; };
+		E13E1B721F42BF96006BFD75 /* app_step_3_2nd_livestock_base_s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = app_step_3_2nd_livestock_base_s.jpg; sourceTree = "<group>"; };
+		E13E1B741F42BFA2006BFD75 /* app_step_3_2nd_poultry_base.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = app_step_3_2nd_poultry_base.jpg; sourceTree = "<group>"; };
+		E13E1B761F42BFB9006BFD75 /* app_step3_2nd_aquatic_base_s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = app_step3_2nd_aquatic_base_s.jpg; sourceTree = "<group>"; };
+		E13E1B7C1F42C0C0006BFD75 /* goat_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goat_s.png; sourceTree = "<group>"; };
+		E13E1B7E1F42C0D5006BFD75 /* beef_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beef_s.png; sourceTree = "<group>"; };
+		E13E1B801F42C0E1006BFD75 /* cow_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cow_s.png; sourceTree = "<group>"; };
+		E13E1B821F42C0EF006BFD75 /* horse_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horse_s.png; sourceTree = "<group>"; };
+		E13E1B841F42C104006BFD75 /* sheep_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sheep_s.png; sourceTree = "<group>"; };
+		E13E1B861F42C110006BFD75 /* pig_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pig_s.png; sourceTree = "<group>"; };
+		E13E1B881F42CFE9006BFD75 /* turkey_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turkey_s.png; sourceTree = "<group>"; };
+		E13E1B8A1F42CFFB006BFD75 /* duck_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = duck_s.png; sourceTree = "<group>"; };
+		E13E1B8C1F42D00B006BFD75 /* chicken_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chicken_s.png; sourceTree = "<group>"; };
+		E13E1B8E1F42D014006BFD75 /* goose_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goose_s.png; sourceTree = "<group>"; };
+		E13E1B901F42D1F5006BFD75 /* fish_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fish_s.png; sourceTree = "<group>"; };
+		E13E1B921F42D37D006BFD75 /* shrimp_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shrimp_s.png; sourceTree = "<group>"; };
+		E13E1B941F42D390006BFD75 /* turtle_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turtle_s.png; sourceTree = "<group>"; };
+		E13E1B961F42D3AC006BFD75 /* crab_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crab_s.png; sourceTree = "<group>"; };
+		E13E1B9C1F42D7EB006BFD75 /* APP-step-3-3rd-human-base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step-3-3rd-human-base.png"; sourceTree = "<group>"; };
+		E13E1B9E1F42D7F8006BFD75 /* 血液-Blood-S.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "血液-Blood-S.png"; sourceTree = "<group>"; };
+		E13E1BA01F42D802006BFD75 /* 尿液-Urine-S.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "尿液-Urine-S.png"; sourceTree = "<group>"; };
+		E13E1BA21F42D85A006BFD75 /* APP-step3-2nd-aquatic-base-S.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step3-2nd-aquatic-base-S.png"; sourceTree = "<group>"; };
+		E13E1BA41F42D868006BFD75 /* 組織-Tissue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "組織-Tissue.png"; sourceTree = "<group>"; };
+		E13E1BA51F42D868006BFD75 /* 飼料-Feed-S.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "飼料-Feed-S.png"; sourceTree = "<group>"; };
+		E13E1BA81F42D884006BFD75 /* APP-Step-3-2nd-Livestock-base-S.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-Step-3-2nd-Livestock-base-S.png"; sourceTree = "<group>"; };
+		E13E1BAA1F42D8A0006BFD75 /* 畜血液-livestock-blood-S.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "畜血液-livestock-blood-S.png"; sourceTree = "<group>"; };
+		E13E1BAB1F42D8A0006BFD75 /* 畜尿液-livestock-urine-S.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "畜尿液-livestock-urine-S.png"; sourceTree = "<group>"; };
+		E13E1BAC1F42D8A0006BFD75 /* 畜乳汁-livestock-Milk-S.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "畜乳汁-livestock-Milk-S.png"; sourceTree = "<group>"; };
+		E13E1BAD1F42D8A0006BFD75 /* 畜組織-livestock-tissue-S.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "畜組織-livestock-tissue-S.png"; sourceTree = "<group>"; };
+		E13E1BAE1F42D8A0006BFD75 /* 畜飼料-livestock-feed-S.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "畜飼料-livestock-feed-S.png"; sourceTree = "<group>"; };
+		E13E1BB41F42D8EC006BFD75 /* APP-Step-3-poultry-base-S.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-Step-3-poultry-base-S.png"; sourceTree = "<group>"; };
+		E13E1BB61F42D900006BFD75 /* 禽血液-poultry-blood-S.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "禽血液-poultry-blood-S.png"; sourceTree = "<group>"; };
+		E13E1BB71F42D900006BFD75 /* 禽組織-poultry-tissue-S.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "禽組織-poultry-tissue-S.png"; sourceTree = "<group>"; };
+		E13E1BB81F42D900006BFD75 /* 禽蛋-poultry-egg-S.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "禽蛋-poultry-egg-S.png"; sourceTree = "<group>"; };
+		E13E1BB91F42D900006BFD75 /* 禽飼料-poultry-feed-S.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "禽飼料-poultry-feed-S.png"; sourceTree = "<group>"; };
+		E13E1BBE1F42D92E006BFD75 /* APP-step-3-3rd-beeproduct-base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "APP-step-3-3rd-beeproduct-base.png"; sourceTree = "<group>"; };
+		E13E1BC01F42D93D006BFD75 /* 蜂王漿-Royal-Jelly-S.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "蜂王漿-Royal-Jelly-S.png"; sourceTree = "<group>"; };
+		E13E1BC11F42D93D006BFD75 /* 蜂蜜-Honey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "蜂蜜-Honey.png"; sourceTree = "<group>"; };
+		E13E1BC41F42E701006BFD75 /* Step03_2_livestock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step03_2_livestock.swift; sourceTree = "<group>"; };
+		E13E1BC61F42E8A1006BFD75 /* Step03_2_poultry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step03_2_poultry.swift; sourceTree = "<group>"; };
+		E13E1BC81F42E8EB006BFD75 /* Step03_2_aquatic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step03_2_aquatic.swift; sourceTree = "<group>"; };
+		E13E1C081F468CD9006BFD75 /* Step03_3_human.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step03_3_human.swift; sourceTree = "<group>"; };
+		E13E1C0A1F468CF8006BFD75 /* Step03_3_livestock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step03_3_livestock.swift; sourceTree = "<group>"; };
+		E13E1C0C1F468D16006BFD75 /* Step03_3_aquatic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step03_3_aquatic.swift; sourceTree = "<group>"; };
+		E13E1C0E1F468D3B006BFD75 /* Step03_3_poultry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step03_3_poultry.swift; sourceTree = "<group>"; };
+		E13E1C101F468D5F006BFD75 /* Step03_3_beeproduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step03_3_beeproduct.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E111CC801F413E790050DC78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E111CC7A1F413E790050DC78 = {
+			isa = PBXGroup;
+			children = (
+				E111CC851F413E790050DC78 /* DrChip */,
+				E111CC841F413E790050DC78 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E111CC841F413E790050DC78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E111CC831F413E790050DC78 /* DrChip.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E111CC851F413E790050DC78 /* DrChip */ = {
+			isa = PBXGroup;
+			children = (
+				E11776541F47D33B0085D750 /* Step01 */,
+				E11776551F47D3530085D750 /* Step02 */,
+				E11776561F47D36E0085D750 /* Step03 */,
+				E11776591F47DB9C0085D750 /* Step04 */,
+				E111CC981F4141890050DC78 /* Images */,
+				E111CC861F413E790050DC78 /* AppDelegate.swift */,
+				E111CC8D1F413E790050DC78 /* Assets.xcassets */,
+				E111CC8F1F413E790050DC78 /* LaunchScreen.storyboard */,
+				E111CC921F413E790050DC78 /* Info.plist */,
+			);
+			path = DrChip;
+			sourceTree = "<group>";
+		};
+		E111CC981F4141890050DC78 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E13E1B571F41734E006BFD75 /* step_base.png */,
+				E13E1B6E1F42BE23006BFD75 /* Step01 */,
+				E13E1B701F42BEE0006BFD75 /* Step02 */,
+				E13E1B711F42BF0E006BFD75 /* Step03 */,
+				E117765F1F47E67A0085D750 /* Step04 */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		E11776541F47D33B0085D750 /* Step01 */ = {
+			isa = PBXGroup;
+			children = (
+				E111CC8A1F413E790050DC78 /* Step01.storyboard */,
+				E111CC881F413E790050DC78 /* Step01VC.swift */,
+			);
+			name = Step01;
+			sourceTree = "<group>";
+		};
+		E11776551F47D3530085D750 /* Step02 */ = {
+			isa = PBXGroup;
+			children = (
+				E13E1B681F42AD21006BFD75 /* Step02.storyboard */,
+				E13E1B6A1F42AE8A006BFD75 /* Step02VC.swift */,
+				E10EB6B91F4CDEC9007762B4 /* QRScannerController.swift */,
+			);
+			name = Step02;
+			sourceTree = "<group>";
+		};
+		E11776561F47D36E0085D750 /* Step03 */ = {
+			isa = PBXGroup;
+			children = (
+				E13E1B651F42ACBE006BFD75 /* Step03.storyboard */,
+				E13E1B6C1F42B7BF006BFD75 /* Step03_1VC.swift */,
+				E13E1BC41F42E701006BFD75 /* Step03_2_livestock.swift */,
+				E13E1BC61F42E8A1006BFD75 /* Step03_2_poultry.swift */,
+				E13E1BC81F42E8EB006BFD75 /* Step03_2_aquatic.swift */,
+				E13E1C081F468CD9006BFD75 /* Step03_3_human.swift */,
+				E13E1C0A1F468CF8006BFD75 /* Step03_3_livestock.swift */,
+				E13E1C0E1F468D3B006BFD75 /* Step03_3_poultry.swift */,
+				E13E1C0C1F468D16006BFD75 /* Step03_3_aquatic.swift */,
+				E13E1C101F468D5F006BFD75 /* Step03_3_beeproduct.swift */,
+			);
+			name = Step03;
+			sourceTree = "<group>";
+		};
+		E11776591F47DB9C0085D750 /* Step04 */ = {
+			isa = PBXGroup;
+			children = (
+				E117765A1F47DF440085D750 /* Step04.storyboard */,
+				E117765D1F47E0F40085D750 /* Step04.swift */,
+				E10E32DD1F57B07F00AF83A7 /* CameraController.swift */,
+			);
+			name = Step04;
+			sourceTree = "<group>";
+		};
+		E117765F1F47E67A0085D750 /* Step04 */ = {
+			isa = PBXGroup;
+			children = (
+				E10E32DF1F57B24400AF83A7 /* CameraButton.png */,
+				E10E32E01F57B24400AF83A7 /* CameraButton@2x.png */,
+				E10E32E11F57B24400AF83A7 /* CameraButton@3x.png */,
+				E11776841F47F47F0085D750 /* blood */,
+				E11776851F47F4C30085D750 /* egg */,
+				E11776861F47F6EC0085D750 /* feed */,
+				E11776911F47F72B0085D750 /* honey */,
+				E11776B41F47F7D10085D750 /* milk */,
+				E11776BF1F47F9C90085D750 /* royalJelly */,
+				E11776D81F47FA290085D750 /* tissue */,
+				E11776F11F47FA7E0085D750 /* urine */,
+			);
+			name = Step04;
+			sourceTree = "<group>";
+		};
+		E11776841F47F47F0085D750 /* blood */ = {
+			isa = PBXGroup;
+			children = (
+				E11776621F47E6E70085D750 /* APP-step4-02-blood-01.png */,
+				E11776631F47E6E70085D750 /* APP-step4-02-blood-02.png */,
+				E11776641F47E6E70085D750 /* APP-step4-02-blood-03.png */,
+				E11776681F47E6FD0085D750 /* APP-step4-03-blood-01.png */,
+				E11776691F47E6FD0085D750 /* APP-step4-03-blood-02.png */,
+				E117766A1F47E6FD0085D750 /* APP-step4-03-blood-03.png */,
+				E117766E1F47E70F0085D750 /* APP-step4-04-blood-01.png */,
+				E117766F1F47E70F0085D750 /* APP-step4-04-blood-02.png */,
+				E11776601F47E6D80085D750 /* APP-step4-blood-timing.png */,
+			);
+			name = blood;
+			sourceTree = "<group>";
+		};
+		E11776851F47F4C30085D750 /* egg */ = {
+			isa = PBXGroup;
+			children = (
+				E11776721F47F3E70085D750 /* APP-step4-02-egg-01.png */,
+				E11776731F47F3E70085D750 /* APP-step4-02-egg-02.png */,
+				E11776741F47F3E70085D750 /* APP-step4-02-egg-03.png */,
+				E117767A1F47F40D0085D750 /* APP-step4-03-egg-01.png */,
+				E117767B1F47F40D0085D750 /* APP-step4-03-egg-02.png */,
+				E117767C1F47F40D0085D750 /* APP-step4-03-egg-03.png */,
+				E11776801F47F4260085D750 /* APP-step4-04-egg-01.png */,
+				E11776811F47F4260085D750 /* APP-step4-04-egg-02.png */,
+				E11776781F47F3F30085D750 /* APP-step4-egg-timing.png */,
+			);
+			name = egg;
+			sourceTree = "<group>";
+		};
+		E11776861F47F6EC0085D750 /* feed */ = {
+			isa = PBXGroup;
+			children = (
+				E11776871F47F7100085D750 /* APP-step4-02-feed-01.png */,
+				E11776881F47F7100085D750 /* APP-step4-02-feed-02.png */,
+				E11776891F47F7100085D750 /* APP-step4-02-feed-03.png */,
+				E117768A1F47F7100085D750 /* APP-step4-02-feed-04.png */,
+				E11776921F47F7680085D750 /* APP-step4-03-feed-01.png */,
+				E11776931F47F7680085D750 /* APP-step4-03-feed-02.png */,
+				E11776941F47F7680085D750 /* APP-step4-03-feed-03.png */,
+				E11776951F47F7680085D750 /* APP-step4-03-feed-04.png */,
+				E117769A1F47F77F0085D750 /* APP-step4-04-feed-01.png */,
+				E117769B1F47F77F0085D750 /* APP-step4-04-feed-02.png */,
+				E117769C1F47F77F0085D750 /* APP-step4-04-feed-03.png */,
+				E117768F1F47F71A0085D750 /* APP-step4-feed-timing.png */,
+			);
+			name = feed;
+			sourceTree = "<group>";
+		};
+		E11776911F47F72B0085D750 /* honey */ = {
+			isa = PBXGroup;
+			children = (
+				E11776A01F47F79E0085D750 /* APP-step4-02-honey-01.png */,
+				E11776A11F47F79E0085D750 /* APP-step4-02-honey-02.png */,
+				E11776A61F47F7B10085D750 /* APP-step4-03-honey-01.png */,
+				E11776A71F47F7B10085D750 /* APP-step4-03-honey-02.png */,
+				E11776A81F47F7B10085D750 /* APP-step4-03-honey-03.png */,
+				E11776AC1F47F7C10085D750 /* APP-step4-04-honey-01.png */,
+				E11776AD1F47F7C10085D750 /* APP-step4-04-honey-02.png */,
+				E11776AE1F47F7C10085D750 /* APP-step4-04-honey-03.png */,
+				E11776AF1F47F7C10085D750 /* APP-step4-04-honey-04.png */,
+				E11776A21F47F79E0085D750 /* APP-step4-honey-timing.png */,
+			);
+			name = honey;
+			sourceTree = "<group>";
+		};
+		E11776B41F47F7D10085D750 /* milk */ = {
+			isa = PBXGroup;
+			children = (
+				E11776B51F47F8180085D750 /* APP-step4-02-milk-01.png */,
+				E11776B61F47F8180085D750 /* APP-step4-02-milk-02.png */,
+				E11776FE1F47FB100085D750 /* APP-step4-03-milk-01.png */,
+				E11776FF1F47FB100085D750 /* APP-step4-03-milk-02.png */,
+				E11776BB1F47F96C0085D750 /* APP-step4-04-milk-01.png */,
+				E11776BC1F47F96C0085D750 /* APP-step4-04-milk-02.png */,
+				E11776B71F47F8180085D750 /* APP-step4-milk-timing.png */,
+			);
+			name = milk;
+			sourceTree = "<group>";
+		};
+		E11776BF1F47F9C90085D750 /* royalJelly */ = {
+			isa = PBXGroup;
+			children = (
+				E11776C01F47F9EE0085D750 /* APP-step4-02-royal-jelly-01.png */,
+				E11776C11F47F9EE0085D750 /* APP-step4-02-royal-jelly-02.png */,
+				E11776C21F47F9EE0085D750 /* APP-step4-02-royal-jelly-03.png */,
+				E11776C31F47F9EE0085D750 /* APP-step4-02-royal-jelly-04.png */,
+				E11776CA1F47FA010085D750 /* APP-step4-03-royal-jelly-01.png */,
+				E11776CB1F47FA010085D750 /* APP-step4-03-royal-jelly-02.png */,
+				E11776CC1F47FA010085D750 /* APP-step4-03-royal-jelly-03.png */,
+				E11776CD1F47FA010085D750 /* APP-step4-03-royal-jelly-04.png */,
+				E11776D21F47FA110085D750 /* APP-step4-04-royal-jelly-01.png */,
+				E11776D31F47FA110085D750 /* APP-step4-04-royal-jelly-02.png */,
+				E11776D41F47FA110085D750 /* APP-step4-04-royal-jelly-03.png */,
+				E11776C41F47F9EE0085D750 /* APP-step4-royal-jelly-timing.png */,
+			);
+			name = royalJelly;
+			sourceTree = "<group>";
+		};
+		E11776D81F47FA290085D750 /* tissue */ = {
+			isa = PBXGroup;
+			children = (
+				E11776D91F47FA4D0085D750 /* APP-step4-02-tissue-01.png */,
+				E11776DA1F47FA4D0085D750 /* APP-step4-02-tissue-02.png */,
+				E11776DB1F47FA4D0085D750 /* APP-step4-02-tissue-03.png */,
+				E11776DC1F47FA4D0085D750 /* APP-step4-02-tissue-04.png */,
+				E11776E31F47FA5E0085D750 /* APP-step4-03-tissue-01.png */,
+				E11776E41F47FA5E0085D750 /* APP-step4-03-tissue-02.png */,
+				E11776E51F47FA5E0085D750 /* APP-step4-03-tissue-03.png */,
+				E11776E61F47FA5E0085D750 /* APP-step4-03-tissue-04.png */,
+				E11776EB1F47FA6E0085D750 /* APP-step4-04-tissue-01.png */,
+				E11776EC1F47FA6E0085D750 /* APP-step4-04-tissue-02.png */,
+				E11776ED1F47FA6E0085D750 /* APP-step4-04-tissue-03.png */,
+				E11776DD1F47FA4D0085D750 /* APP-step4-tissue-timing.png */,
+			);
+			name = tissue;
+			sourceTree = "<group>";
+		};
+		E11776F11F47FA7E0085D750 /* urine */ = {
+			isa = PBXGroup;
+			children = (
+				E11776F21F47FA970085D750 /* APP-step4-02-urine-01.png */,
+				E11776F31F47FA970085D750 /* APP-step4-02-urine-02.png */,
+				E11776F81F47FAAA0085D750 /* APP-step4-03-urine-01.png */,
+				E11776F91F47FAAA0085D750 /* APP-step4-03-urine-02.png */,
+				E11776FC1F47FAB90085D750 /* APP-step4-04-urine-01.png */,
+				E11776F41F47FA970085D750 /* APP-step4-urine-timing.png */,
+			);
+			name = urine;
+			sourceTree = "<group>";
+		};
+		E11777101F4850340085D750 /* Layer3 */ = {
+			isa = PBXGroup;
+			children = (
+				E117771C1F4852B10085D750 /* human */,
+				E117771B1F4852A90085D750 /* livestock */,
+				E117771A1F4852A10085D750 /* poultry */,
+				E11777191F4852930085D750 /* aquatic */,
+				E11777181F4852630085D750 /* beeproduct */,
+			);
+			name = Layer3;
+			sourceTree = "<group>";
+		};
+		E11777111F4850420085D750 /* Layer2 */ = {
+			isa = PBXGroup;
+			children = (
+				E11777171F4851A10085D750 /* livestock */,
+				E11777161F48518F0085D750 /* poultry */,
+				E11777151F4851760085D750 /* aquatic */,
+			);
+			name = Layer2;
+			sourceTree = "<group>";
+		};
+		E11777121F4850490085D750 /* Layer1 */ = {
+			isa = PBXGroup;
+			children = (
+				E13E1B5B1F4174EB006BFD75 /* human.png */,
+				E13E1B5C1F4174EB006BFD75 /* livestock.png */,
+				E13E1B5D1F4174EB006BFD75 /* poultry.png */,
+				E13E1B591F4174EB006BFD75 /* aquatic.png */,
+				E13E1B5A1F4174EB006BFD75 /* bee.png */,
+				E11777131F4850E40085D750 /* APP-step-3-1st-Base-N.png */,
+			);
+			name = Layer1;
+			sourceTree = "<group>";
+		};
+		E11777151F4851760085D750 /* aquatic */ = {
+			isa = PBXGroup;
+			children = (
+				E13E1B901F42D1F5006BFD75 /* fish_s.png */,
+				E13E1B921F42D37D006BFD75 /* shrimp_s.png */,
+				E13E1B941F42D390006BFD75 /* turtle_s.png */,
+				E13E1B961F42D3AC006BFD75 /* crab_s.png */,
+				E13E1B761F42BFB9006BFD75 /* app_step3_2nd_aquatic_base_s.jpg */,
+			);
+			name = aquatic;
+			sourceTree = "<group>";
+		};
+		E11777161F48518F0085D750 /* poultry */ = {
+			isa = PBXGroup;
+			children = (
+				E13E1B881F42CFE9006BFD75 /* turkey_s.png */,
+				E13E1B8A1F42CFFB006BFD75 /* duck_s.png */,
+				E13E1B8C1F42D00B006BFD75 /* chicken_s.png */,
+				E13E1B8E1F42D014006BFD75 /* goose_s.png */,
+				E13E1B741F42BFA2006BFD75 /* app_step_3_2nd_poultry_base.jpg */,
+			);
+			name = poultry;
+			sourceTree = "<group>";
+		};
+		E11777171F4851A10085D750 /* livestock */ = {
+			isa = PBXGroup;
+			children = (
+				E13E1B7C1F42C0C0006BFD75 /* goat_s.png */,
+				E13E1B7E1F42C0D5006BFD75 /* beef_s.png */,
+				E13E1B801F42C0E1006BFD75 /* cow_s.png */,
+				E13E1B821F42C0EF006BFD75 /* horse_s.png */,
+				E13E1B841F42C104006BFD75 /* sheep_s.png */,
+				E13E1B861F42C110006BFD75 /* pig_s.png */,
+				E13E1B721F42BF96006BFD75 /* app_step_3_2nd_livestock_base_s.jpg */,
+			);
+			name = livestock;
+			sourceTree = "<group>";
+		};
+		E11777181F4852630085D750 /* beeproduct */ = {
+			isa = PBXGroup;
+			children = (
+				E13E1BC11F42D93D006BFD75 /* 蜂蜜-Honey.png */,
+				E13E1BC01F42D93D006BFD75 /* 蜂王漿-Royal-Jelly-S.png */,
+				E13E1BBE1F42D92E006BFD75 /* APP-step-3-3rd-beeproduct-base.png */,
+			);
+			name = beeproduct;
+			sourceTree = "<group>";
+		};
+		E11777191F4852930085D750 /* aquatic */ = {
+			isa = PBXGroup;
+			children = (
+				E13E1BA41F42D868006BFD75 /* 組織-Tissue.png */,
+				E13E1BA51F42D868006BFD75 /* 飼料-Feed-S.png */,
+				E13E1BA21F42D85A006BFD75 /* APP-step3-2nd-aquatic-base-S.png */,
+			);
+			name = aquatic;
+			sourceTree = "<group>";
+		};
+		E117771A1F4852A10085D750 /* poultry */ = {
+			isa = PBXGroup;
+			children = (
+				E13E1BB61F42D900006BFD75 /* 禽血液-poultry-blood-S.png */,
+				E13E1BB71F42D900006BFD75 /* 禽組織-poultry-tissue-S.png */,
+				E13E1BB81F42D900006BFD75 /* 禽蛋-poultry-egg-S.png */,
+				E13E1BB91F42D900006BFD75 /* 禽飼料-poultry-feed-S.png */,
+				E13E1BB41F42D8EC006BFD75 /* APP-Step-3-poultry-base-S.png */,
+			);
+			name = poultry;
+			sourceTree = "<group>";
+		};
+		E117771B1F4852A90085D750 /* livestock */ = {
+			isa = PBXGroup;
+			children = (
+				E13E1BAC1F42D8A0006BFD75 /* 畜乳汁-livestock-Milk-S.png */,
+				E13E1BAA1F42D8A0006BFD75 /* 畜血液-livestock-blood-S.png */,
+				E13E1BAD1F42D8A0006BFD75 /* 畜組織-livestock-tissue-S.png */,
+				E13E1BAB1F42D8A0006BFD75 /* 畜尿液-livestock-urine-S.png */,
+				E13E1BAE1F42D8A0006BFD75 /* 畜飼料-livestock-feed-S.png */,
+				E13E1BA81F42D884006BFD75 /* APP-Step-3-2nd-Livestock-base-S.png */,
+			);
+			name = livestock;
+			sourceTree = "<group>";
+		};
+		E117771C1F4852B10085D750 /* human */ = {
+			isa = PBXGroup;
+			children = (
+				E13E1B9E1F42D7F8006BFD75 /* 血液-Blood-S.png */,
+				E13E1BA01F42D802006BFD75 /* 尿液-Urine-S.png */,
+				E13E1B9C1F42D7EB006BFD75 /* APP-step-3-3rd-human-base.png */,
+			);
+			name = human;
+			sourceTree = "<group>";
+		};
+		E13E1B6E1F42BE23006BFD75 /* Step01 */ = {
+			isa = PBXGroup;
+			children = (
+				E111CC9B1F4141A20050DC78 /* login_twitter.png */,
+				E111CC9A1F4141A20050DC78 /* login_google.png */,
+				E111CC991F4141A20050DC78 /* login_fb.png */,
+				E13E1B631F417808006BFD75 /* logo.png */,
+			);
+			name = Step01;
+			sourceTree = "<group>";
+		};
+		E13E1B701F42BEE0006BFD75 /* Step02 */ = {
+			isa = PBXGroup;
+			children = (
+				E111CCAB1F4149CA0050DC78 /* app_step_2_show.jpg */,
+			);
+			name = Step02;
+			sourceTree = "<group>";
+		};
+		E13E1B711F42BF0E006BFD75 /* Step03 */ = {
+			isa = PBXGroup;
+			children = (
+				E11777121F4850490085D750 /* Layer1 */,
+				E11777111F4850420085D750 /* Layer2 */,
+				E11777101F4850340085D750 /* Layer3 */,
+			);
+			name = Step03;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E111CC821F413E790050DC78 /* DrChip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E111CC951F413E790050DC78 /* Build configuration list for PBXNativeTarget "DrChip" */;
+			buildPhases = (
+				E111CC7F1F413E790050DC78 /* Sources */,
+				E111CC801F413E790050DC78 /* Frameworks */,
+				E111CC811F413E790050DC78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrChip;
+			productName = DrChip;
+			productReference = E111CC831F413E790050DC78 /* DrChip.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E111CC7B1F413E790050DC78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = hyphen;
+				TargetAttributes = {
+					E111CC821F413E790050DC78 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = DHH8LP474C;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E111CC7E1F413E790050DC78 /* Build configuration list for PBXProject "DrChip" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E111CC7A1F413E790050DC78;
+			productRefGroup = E111CC841F413E790050DC78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E111CC821F413E790050DC78 /* DrChip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E111CC811F413E790050DC78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11776DF1F47FA4D0085D750 /* APP-step4-02-tissue-02.png in Resources */,
+				E11776AB1F47F7B10085D750 /* APP-step4-03-honey-03.png in Resources */,
+				E11776B91F47F8180085D750 /* APP-step4-02-milk-02.png in Resources */,
+				E10E32E21F57B24400AF83A7 /* CameraButton.png in Resources */,
+				E13E1B9F1F42D7F8006BFD75 /* 血液-Blood-S.png in Resources */,
+				E13E1B7D1F42C0C0006BFD75 /* goat_s.png in Resources */,
+				E13E1BA91F42D884006BFD75 /* APP-Step-3-2nd-Livestock-base-S.png in Resources */,
+				E13E1BA11F42D802006BFD75 /* 尿液-Urine-S.png in Resources */,
+				E11776791F47F3F30085D750 /* APP-step4-egg-timing.png in Resources */,
+				E11776671F47E6E70085D750 /* APP-step4-02-blood-03.png in Resources */,
+				E11776751F47F3E70085D750 /* APP-step4-02-egg-01.png in Resources */,
+				E111CC911F413E790050DC78 /* LaunchScreen.storyboard in Resources */,
+				E11776961F47F7680085D750 /* APP-step4-03-feed-01.png in Resources */,
+				E11776E91F47FA5E0085D750 /* APP-step4-03-tissue-03.png in Resources */,
+				E117766C1F47E6FD0085D750 /* APP-step4-03-blood-02.png in Resources */,
+				E10E32E31F57B24400AF83A7 /* CameraButton@2x.png in Resources */,
+				E11776EA1F47FA5E0085D750 /* APP-step4-03-tissue-04.png in Resources */,
+				E13E1B9D1F42D7EB006BFD75 /* APP-step-3-3rd-human-base.png in Resources */,
+				E13E1BBC1F42D900006BFD75 /* 禽蛋-poultry-egg-S.png in Resources */,
+				E111CC9D1F4141A20050DC78 /* login_google.png in Resources */,
+				E11776CE1F47FA010085D750 /* APP-step4-03-royal-jelly-01.png in Resources */,
+				E13E1BA61F42D868006BFD75 /* 組織-Tissue.png in Resources */,
+				E13E1B671F42ACBE006BFD75 /* Step03.storyboard in Resources */,
+				E11776B31F47F7C10085D750 /* APP-step4-04-honey-04.png in Resources */,
+				E11776971F47F7680085D750 /* APP-step4-03-feed-02.png in Resources */,
+				E13E1BC31F42D93D006BFD75 /* 蜂蜜-Honey.png in Resources */,
+				E13E1B891F42CFE9006BFD75 /* turkey_s.png in Resources */,
+				E117767E1F47F40D0085D750 /* APP-step4-03-egg-02.png in Resources */,
+				E11776C81F47F9EE0085D750 /* APP-step4-02-royal-jelly-04.png in Resources */,
+				E13E1BBF1F42D92E006BFD75 /* APP-step-3-3rd-beeproduct-base.png in Resources */,
+				E13E1B931F42D37D006BFD75 /* shrimp_s.png in Resources */,
+				E117767D1F47F40D0085D750 /* APP-step4-03-egg-01.png in Resources */,
+				E13E1B751F42BFA2006BFD75 /* app_step_3_2nd_poultry_base.jpg in Resources */,
+				E11776CF1F47FA010085D750 /* APP-step4-03-royal-jelly-02.png in Resources */,
+				E117769F1F47F77F0085D750 /* APP-step4-04-feed-03.png in Resources */,
+				E11776E21F47FA4D0085D750 /* APP-step4-tissue-timing.png in Resources */,
+				E13E1B5E1F4174EB006BFD75 /* aquatic.png in Resources */,
+				E11776B11F47F7C10085D750 /* APP-step4-04-honey-02.png in Resources */,
+				E117768B1F47F7100085D750 /* APP-step4-02-feed-01.png in Resources */,
+				E13E1B5F1F4174EB006BFD75 /* bee.png in Resources */,
+				E11776E11F47FA4D0085D750 /* APP-step4-02-tissue-04.png in Resources */,
+				E11776981F47F7680085D750 /* APP-step4-03-feed-03.png in Resources */,
+				E111CC8E1F413E790050DC78 /* Assets.xcassets in Resources */,
+				E13E1B971F42D3AC006BFD75 /* crab_s.png in Resources */,
+				E111CC8C1F413E790050DC78 /* Step01.storyboard in Resources */,
+				E11776C61F47F9EE0085D750 /* APP-step4-02-royal-jelly-02.png in Resources */,
+				E11776F01F47FA6E0085D750 /* APP-step4-04-tissue-03.png in Resources */,
+				E11776FD1F47FAB90085D750 /* APP-step4-04-urine-01.png in Resources */,
+				E13E1B951F42D390006BFD75 /* turtle_s.png in Resources */,
+				E13E1BB01F42D8A0006BFD75 /* 畜尿液-livestock-urine-S.png in Resources */,
+				E11776E71F47FA5E0085D750 /* APP-step4-03-tissue-01.png in Resources */,
+				E11776D71F47FA110085D750 /* APP-step4-04-royal-jelly-03.png in Resources */,
+				E11777141F4850E40085D750 /* APP-step-3-1st-Base-N.png in Resources */,
+				E13E1B831F42C0EF006BFD75 /* horse_s.png in Resources */,
+				E13E1B611F4174EB006BFD75 /* livestock.png in Resources */,
+				E13E1B731F42BF96006BFD75 /* app_step_3_2nd_livestock_base_s.jpg in Resources */,
+				E13E1BB31F42D8A0006BFD75 /* 畜飼料-livestock-feed-S.png in Resources */,
+				E11776A51F47F79E0085D750 /* APP-step4-honey-timing.png in Resources */,
+				E11776C51F47F9EE0085D750 /* APP-step4-02-royal-jelly-01.png in Resources */,
+				E11776831F47F4260085D750 /* APP-step4-04-egg-02.png in Resources */,
+				E13E1BC21F42D93D006BFD75 /* 蜂王漿-Royal-Jelly-S.png in Resources */,
+				E11776DE1F47FA4D0085D750 /* APP-step4-02-tissue-01.png in Resources */,
+				E11776991F47F7680085D750 /* APP-step4-03-feed-04.png in Resources */,
+				E13E1B8D1F42D00B006BFD75 /* chicken_s.png in Resources */,
+				E13E1B581F41734E006BFD75 /* step_base.png in Resources */,
+				E11776BA1F47F8180085D750 /* APP-step4-milk-timing.png in Resources */,
+				E11777001F47FB100085D750 /* APP-step4-03-milk-01.png in Resources */,
+				E11776A41F47F79E0085D750 /* APP-step4-02-honey-02.png in Resources */,
+				E13E1B691F42AD21006BFD75 /* Step02.storyboard in Resources */,
+				E117768E1F47F7100085D750 /* APP-step4-02-feed-04.png in Resources */,
+				E11776761F47F3E70085D750 /* APP-step4-02-egg-02.png in Resources */,
+				E13E1B811F42C0E1006BFD75 /* cow_s.png in Resources */,
+				E11776D11F47FA010085D750 /* APP-step4-03-royal-jelly-04.png in Resources */,
+				E11776EF1F47FA6E0085D750 /* APP-step4-04-tissue-02.png in Resources */,
+				E11776771F47F3E70085D750 /* APP-step4-02-egg-03.png in Resources */,
+				E11776C71F47F9EE0085D750 /* APP-step4-02-royal-jelly-03.png in Resources */,
+				E13E1BB11F42D8A0006BFD75 /* 畜乳汁-livestock-Milk-S.png in Resources */,
+				E11776711F47E70F0085D750 /* APP-step4-04-blood-02.png in Resources */,
+				E13E1B771F42BFB9006BFD75 /* app_step3_2nd_aquatic_base_s.jpg in Resources */,
+				E111CC9C1F4141A20050DC78 /* login_fb.png in Resources */,
+				E11776F51F47FA970085D750 /* APP-step4-02-urine-01.png in Resources */,
+				E11776701F47E70F0085D750 /* APP-step4-04-blood-01.png in Resources */,
+				E117768C1F47F7100085D750 /* APP-step4-02-feed-02.png in Resources */,
+				E11776E01F47FA4D0085D750 /* APP-step4-02-tissue-03.png in Resources */,
+				E11776901F47F71A0085D750 /* APP-step4-feed-timing.png in Resources */,
+				E13E1BB51F42D8EC006BFD75 /* APP-Step-3-poultry-base-S.png in Resources */,
+				E11776EE1F47FA6E0085D750 /* APP-step4-04-tissue-01.png in Resources */,
+				E11776BD1F47F96C0085D750 /* APP-step4-04-milk-01.png in Resources */,
+				E117766D1F47E6FD0085D750 /* APP-step4-03-blood-03.png in Resources */,
+				E11776611F47E6D80085D750 /* APP-step4-blood-timing.png in Resources */,
+				E117766B1F47E6FD0085D750 /* APP-step4-03-blood-01.png in Resources */,
+				E11776E81F47FA5E0085D750 /* APP-step4-03-tissue-02.png in Resources */,
+				E11776BE1F47F96C0085D750 /* APP-step4-04-milk-02.png in Resources */,
+				E13E1B8B1F42CFFB006BFD75 /* duck_s.png in Resources */,
+				E11776B01F47F7C10085D750 /* APP-step4-04-honey-01.png in Resources */,
+				E13E1B8F1F42D014006BFD75 /* goose_s.png in Resources */,
+				E117769D1F47F77F0085D750 /* APP-step4-04-feed-01.png in Resources */,
+				E13E1BA71F42D868006BFD75 /* 飼料-Feed-S.png in Resources */,
+				E13E1BA31F42D85A006BFD75 /* APP-step3-2nd-aquatic-base-S.png in Resources */,
+				E13E1B601F4174EB006BFD75 /* human.png in Resources */,
+				E11776D61F47FA110085D750 /* APP-step4-04-royal-jelly-02.png in Resources */,
+				E11776F71F47FA970085D750 /* APP-step4-urine-timing.png in Resources */,
+				E117768D1F47F7100085D750 /* APP-step4-02-feed-03.png in Resources */,
+				E13E1BAF1F42D8A0006BFD75 /* 畜血液-livestock-blood-S.png in Resources */,
+				E117767F1F47F40D0085D750 /* APP-step4-03-egg-03.png in Resources */,
+				E13E1B621F4174EB006BFD75 /* poultry.png in Resources */,
+				E11776A31F47F79E0085D750 /* APP-step4-02-honey-01.png in Resources */,
+				E11776FA1F47FAAA0085D750 /* APP-step4-03-urine-01.png in Resources */,
+				E11776AA1F47F7B10085D750 /* APP-step4-03-honey-02.png in Resources */,
+				E10E32E41F57B24400AF83A7 /* CameraButton@3x.png in Resources */,
+				E11776B21F47F7C10085D750 /* APP-step4-04-honey-03.png in Resources */,
+				E13E1BBB1F42D900006BFD75 /* 禽組織-poultry-tissue-S.png in Resources */,
+				E117769E1F47F77F0085D750 /* APP-step4-04-feed-02.png in Resources */,
+				E11776F61F47FA970085D750 /* APP-step4-02-urine-02.png in Resources */,
+				E11776B81F47F8180085D750 /* APP-step4-02-milk-01.png in Resources */,
+				E11776661F47E6E70085D750 /* APP-step4-02-blood-02.png in Resources */,
+				E11776651F47E6E70085D750 /* APP-step4-02-blood-01.png in Resources */,
+				E11776C91F47F9EE0085D750 /* APP-step4-royal-jelly-timing.png in Resources */,
+				E13E1B911F42D1F5006BFD75 /* fish_s.png in Resources */,
+				E13E1B641F417808006BFD75 /* logo.png in Resources */,
+				E117765C1F47DF440085D750 /* Step04.storyboard in Resources */,
+				E11776D51F47FA110085D750 /* APP-step4-04-royal-jelly-01.png in Resources */,
+				E111CC9E1F4141A20050DC78 /* login_twitter.png in Resources */,
+				E13E1B871F42C110006BFD75 /* pig_s.png in Resources */,
+				E11776A91F47F7B10085D750 /* APP-step4-03-honey-01.png in Resources */,
+				E11776D01F47FA010085D750 /* APP-step4-03-royal-jelly-03.png in Resources */,
+				E13E1BBD1F42D900006BFD75 /* 禽飼料-poultry-feed-S.png in Resources */,
+				E11776FB1F47FAAA0085D750 /* APP-step4-03-urine-02.png in Resources */,
+				E13E1BB21F42D8A0006BFD75 /* 畜組織-livestock-tissue-S.png in Resources */,
+				E111CCAC1F4149CA0050DC78 /* app_step_2_show.jpg in Resources */,
+				E11777011F47FB100085D750 /* APP-step4-03-milk-02.png in Resources */,
+				E11776821F47F4260085D750 /* APP-step4-04-egg-01.png in Resources */,
+				E13E1B7F1F42C0D5006BFD75 /* beef_s.png in Resources */,
+				E13E1B851F42C104006BFD75 /* sheep_s.png in Resources */,
+				E13E1BBA1F42D900006BFD75 /* 禽血液-poultry-blood-S.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E111CC7F1F413E790050DC78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E13E1C091F468CD9006BFD75 /* Step03_3_human.swift in Sources */,
+				E13E1C111F468D5F006BFD75 /* Step03_3_beeproduct.swift in Sources */,
+				E13E1BC51F42E701006BFD75 /* Step03_2_livestock.swift in Sources */,
+				E10EB6BA1F4CDEC9007762B4 /* QRScannerController.swift in Sources */,
+				E13E1B6B1F42AE8A006BFD75 /* Step02VC.swift in Sources */,
+				E13E1B6D1F42B7BF006BFD75 /* Step03_1VC.swift in Sources */,
+				E13E1BC71F42E8A1006BFD75 /* Step03_2_poultry.swift in Sources */,
+				E111CC891F413E790050DC78 /* Step01VC.swift in Sources */,
+				E117765E1F47E0F40085D750 /* Step04.swift in Sources */,
+				E10E32DE1F57B07F00AF83A7 /* CameraController.swift in Sources */,
+				E13E1C0B1F468CF8006BFD75 /* Step03_3_livestock.swift in Sources */,
+				E111CC871F413E790050DC78 /* AppDelegate.swift in Sources */,
+				E13E1BC91F42E8EB006BFD75 /* Step03_2_aquatic.swift in Sources */,
+				E13E1C0D1F468D16006BFD75 /* Step03_3_aquatic.swift in Sources */,
+				E13E1C0F1F468D3B006BFD75 /* Step03_3_poultry.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E111CC8A1F413E790050DC78 /* Step01.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E111CC8B1F413E790050DC78 /* Base */,
+			);
+			name = Step01.storyboard;
+			sourceTree = "<group>";
+		};
+		E111CC8F1F413E790050DC78 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E111CC901F413E790050DC78 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E117765A1F47DF440085D750 /* Step04.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E117765B1F47DF440085D750 /* Base */,
+			);
+			name = Step04.storyboard;
+			sourceTree = "<group>";
+		};
+		E13E1B651F42ACBE006BFD75 /* Step03.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E13E1B661F42ACBE006BFD75 /* Base */,
+			);
+			name = Step03.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E111CC931F413E790050DC78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E111CC941F413E790050DC78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E111CC961F413E790050DC78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DHH8LP474C;
+				INFOPLIST_FILE = DrChip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tw.com.hyphen.DrChip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E111CC971F413E790050DC78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DHH8LP474C;
+				INFOPLIST_FILE = DrChip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tw.com.hyphen.DrChip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E111CC7E1F413E790050DC78 /* Build configuration list for PBXProject "DrChip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E111CC931F413E790050DC78 /* Debug */,
+				E111CC941F413E790050DC78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E111CC951F413E790050DC78 /* Build configuration list for PBXNativeTarget "DrChip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E111CC961F413E790050DC78 /* Debug */,
+				E111CC971F413E790050DC78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E111CC7B1F413E790050DC78 /* Project object */;
+}

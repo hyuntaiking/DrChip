@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Qil-aT-Gjr">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Step01VC-->
+        <scene sceneID="AYV-C2-klb">
+            <objects>
+                <viewController storyboardIdentifier="step01" id="Qil-aT-Gjr" customClass="Step01VC" customModule="DrChip" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Srr-Q8-nlm"/>
+                        <viewControllerLayoutGuide type="bottom" id="VcN-sU-gqC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WYp-wW-D2h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="step_base.png" translatesAutoresizingMaskIntoConstraints="NO" id="hWs-99-4qg">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="XHC-m9-y9q">
+                                <rect key="frame" x="134.33333333333331" y="76.000000000000014" width="145.33333333333331" height="142.33333333333337"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="帳號：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhA-AG-IVm">
+                                <rect key="frame" x="73.333333333333329" y="265.66666666666669" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密碼：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OzA-dB-Z5D">
+                                <rect key="frame" x="73.333333333333329" y="309.66666666666669" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Hx-0G-LZ4">
+                                <rect key="frame" x="126.33333333333331" y="260.66666666666669" width="211" height="30.666666666666629"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="axl-iC-eaG">
+                                <rect key="frame" x="126" y="305" width="211.66666666666669" height="30.333333333333314"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MC3-pd-vuB">
+                                <rect key="frame" x="182.66666666666666" y="347.66666666666669" width="49" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="登入"/>
+                                <connections>
+                                    <segue destination="MXy-3B-rBk" kind="show" id="0Af-eX-h4L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NeZ-PV-f4B">
+                                <rect key="frame" x="92.333333333333314" y="409.66666666666669" width="63.666666666666686" height="64"/>
+                                <state key="normal" image="login_fb.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kls-r7-we7">
+                                <rect key="frame" x="175" y="409.66666666666669" width="64" height="64"/>
+                                <state key="normal" image="login_twitter.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfY-My-9Mb">
+                                <rect key="frame" x="258" y="409.66666666666669" width="63.666666666666686" height="64"/>
+                                <state key="normal" image="login_google.png"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NeZ-PV-f4B" firstAttribute="width" secondItem="hWs-99-4qg" secondAttribute="width" multiplier="0.154" id="03H-cm-2ps"/>
+                            <constraint firstItem="NeZ-PV-f4B" firstAttribute="centerX" secondItem="WYp-wW-D2h" secondAttribute="centerX" multiplier="0.6" id="1Sy-9k-l5V"/>
+                            <constraint firstItem="XHC-m9-y9q" firstAttribute="height" secondItem="hWs-99-4qg" secondAttribute="height" multiplier="0.2" id="1lc-0h-ucD"/>
+                            <constraint firstItem="OzA-dB-Z5D" firstAttribute="centerY" secondItem="WYp-wW-D2h" secondAttribute="centerY" multiplier="0.87" id="3M3-h8-4Iq"/>
+                            <constraint firstItem="XHC-m9-y9q" firstAttribute="width" secondItem="hWs-99-4qg" secondAttribute="width" multiplier="0.35" id="3QG-9G-I8P"/>
+                            <constraint firstItem="XHC-m9-y9q" firstAttribute="centerX" secondItem="WYp-wW-D2h" secondAttribute="centerX" id="3kB-Ow-Ptq"/>
+                            <constraint firstItem="OzA-dB-Z5D" firstAttribute="centerX" secondItem="WYp-wW-D2h" secondAttribute="centerX" multiplier="0.48" id="638-uO-mjk"/>
+                            <constraint firstItem="jhA-AG-IVm" firstAttribute="centerX" secondItem="WYp-wW-D2h" secondAttribute="centerX" multiplier="0.48" id="7ia-ND-bXw"/>
+                            <constraint firstItem="9Hx-0G-LZ4" firstAttribute="width" secondItem="hWs-99-4qg" secondAttribute="width" multiplier="0.51" id="BeI-Kp-xBi"/>
+                            <constraint firstItem="qfY-My-9Mb" firstAttribute="width" secondItem="hWs-99-4qg" secondAttribute="width" multiplier="0.154" id="BlZ-id-796"/>
+                            <constraint firstItem="qfY-My-9Mb" firstAttribute="centerY" secondItem="WYp-wW-D2h" secondAttribute="centerY" multiplier="1.2" id="Ci6-L2-eLX"/>
+                            <constraint firstItem="Kls-r7-we7" firstAttribute="height" secondItem="hWs-99-4qg" secondAttribute="height" multiplier="0.089" id="E1Y-wW-vwk"/>
+                            <constraint firstItem="hWs-99-4qg" firstAttribute="top" secondItem="Srr-Q8-nlm" secondAttribute="bottom" id="ELG-JQ-vtb"/>
+                            <constraint firstItem="VcN-sU-gqC" firstAttribute="top" secondItem="hWs-99-4qg" secondAttribute="bottom" id="GFV-46-Dh9"/>
+                            <constraint firstAttribute="trailing" secondItem="hWs-99-4qg" secondAttribute="trailing" id="J2U-wC-rJ0"/>
+                            <constraint firstItem="9Hx-0G-LZ4" firstAttribute="centerX" secondItem="WYp-wW-D2h" secondAttribute="centerX" multiplier="1.12" id="O44-qn-M0r"/>
+                            <constraint firstItem="axl-iC-eaG" firstAttribute="height" secondItem="hWs-99-4qg" secondAttribute="height" multiplier="0.043" id="Pko-eD-eM3"/>
+                            <constraint firstItem="NeZ-PV-f4B" firstAttribute="height" secondItem="hWs-99-4qg" secondAttribute="height" multiplier="0.089" id="W4g-xj-ZGJ"/>
+                            <constraint firstItem="Kls-r7-we7" firstAttribute="width" secondItem="hWs-99-4qg" secondAttribute="width" multiplier="0.154" id="WAk-Xo-csn"/>
+                            <constraint firstItem="axl-iC-eaG" firstAttribute="width" secondItem="hWs-99-4qg" secondAttribute="width" multiplier="0.51" id="XvH-Fs-9Qo"/>
+                            <constraint firstItem="NeZ-PV-f4B" firstAttribute="centerY" secondItem="WYp-wW-D2h" secondAttribute="centerY" multiplier="1.2" id="YdN-XR-qfL"/>
+                            <constraint firstItem="9Hx-0G-LZ4" firstAttribute="centerY" secondItem="WYp-wW-D2h" secondAttribute="centerY" multiplier="0.75" id="aBn-nC-VcH"/>
+                            <constraint firstItem="qfY-My-9Mb" firstAttribute="height" secondItem="hWs-99-4qg" secondAttribute="height" multiplier="0.089" id="cRC-JS-cX0"/>
+                            <constraint firstItem="jhA-AG-IVm" firstAttribute="centerY" secondItem="WYp-wW-D2h" secondAttribute="centerY" multiplier="0.75" id="icK-pN-7RI"/>
+                            <constraint firstItem="XHC-m9-y9q" firstAttribute="centerY" secondItem="WYp-wW-D2h" secondAttribute="centerY" multiplier="0.4" id="klo-sI-oVd"/>
+                            <constraint firstItem="qfY-My-9Mb" firstAttribute="centerX" secondItem="WYp-wW-D2h" secondAttribute="centerX" multiplier="1.4" id="niv-sF-Nvo"/>
+                            <constraint firstItem="hWs-99-4qg" firstAttribute="leading" secondItem="WYp-wW-D2h" secondAttribute="leading" id="nkD-P7-FHP"/>
+                            <constraint firstItem="axl-iC-eaG" firstAttribute="centerX" secondItem="WYp-wW-D2h" secondAttribute="centerX" multiplier="1.12" id="oHN-nC-bNv"/>
+                            <constraint firstItem="MC3-pd-vuB" firstAttribute="centerY" secondItem="WYp-wW-D2h" secondAttribute="centerY" id="pjB-a4-lKK"/>
+                            <constraint firstItem="Kls-r7-we7" firstAttribute="centerX" secondItem="WYp-wW-D2h" secondAttribute="centerX" id="q9L-gL-sGh"/>
+                            <constraint firstItem="9Hx-0G-LZ4" firstAttribute="height" secondItem="hWs-99-4qg" secondAttribute="height" multiplier="0.043" id="u9U-kE-qlZ"/>
+                            <constraint firstItem="MC3-pd-vuB" firstAttribute="centerX" secondItem="WYp-wW-D2h" secondAttribute="centerX" id="uNo-am-XfC"/>
+                            <constraint firstItem="Kls-r7-we7" firstAttribute="centerY" secondItem="WYp-wW-D2h" secondAttribute="centerY" multiplier="1.2" id="vJu-Hc-6Q5"/>
+                            <constraint firstItem="axl-iC-eaG" firstAttribute="centerY" secondItem="WYp-wW-D2h" secondAttribute="centerY" multiplier="0.87" id="w14-qP-kEi"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WxS-ju-UMk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85.507246376811594" y="135.32608695652175"/>
+        </scene>
+        <!--Step02-->
+        <scene sceneID="PCJ-RH-1wX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Step02" id="MXy-3B-rBk" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iul-az-aCr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="542" y="135"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="login_fb.png" width="64" height="64"/>
+        <image name="login_google.png" width="64" height="64"/>
+        <image name="login_twitter.png" width="64" height="64"/>
+        <image name="logo.png" width="168" height="163"/>
+        <image name="step_base.png" width="1080" height="1920"/>
+    </resources>
+</document>
