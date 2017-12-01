@@ -75,6 +75,22 @@ class CameraController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func pixel(in image: UIImage, at point: CGPoint) -> (UInt8, UInt8, UInt8)? {
+        let width = Int(image.size.width)
+        let height = Int(image.size.height)
+        let x = Int(point.x)
+        let y = Int(point.y)
+        guard x < width && y < height else {
+            return nil
+        }
+        guard let cfData:CFData = image.cgImage?.dataProvider?.data, let pointer = CFDataGetBytePtr(cfData) else {
+            return nil
+        }
+        let bytesPerPixel = 4
+        let offset = (x + y * width) * bytesPerPixel
+        return (pointer[offset], pointer[offset + 1], pointer[offset + 2])
+    }
+    
     // MARK: - Action methods
     
     @IBAction func capture(sender: UIButton) {
@@ -82,12 +98,18 @@ class CameraController: UIViewController {
         stillImageOutput?.captureStillImageAsynchronously(from: videoConnection, completionHandler: { (imageDataSampleBuffer, error) -> Void in
             
             if let imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(imageDataSampleBuffer) {
+                for x in Int(self.auditionView.frame.origin.x)...Int(self.auditionView.frame.origin.x + self.auditionView.frame.width) {
+                    for y in Int(self.auditionView.frame.origin.y)...Int(self.auditionView.frame.origin.y + self.auditionView.frame.height) {
+                    }
+                }
                 self.stillImage = UIImage(data: imageData)
                 for x in Int(self.auditionView.frame.origin.x)...Int(self.auditionView.frame.origin.x + self.auditionView.frame.width) {
                     for y in Int(self.auditionView.frame.origin.y)...Int(self.auditionView.frame.origin.y + self.auditionView.frame.height) {
-                        let pointColor = self.stillImage?.getPixelColor(pos: CGPoint(x: x, y: y))
+//                        let pointColor = self.stillImage?.getPixelColor(pos: CGPoint(x: x, y: y))
 //                        print("(\(x),\(y)):\(pointColor?.ciColor.red) \(pointColor?.ciColor.green) \(pointColor?.ciColor.blue)")
-                        
+                        if let (r,g,b) = self.pixel(in: self.stillImage!, at: CGPoint(x: x, y: y)) {
+                            print("R: \(r) G: \(g) B: \(b)  & X: \(x) Y: \(y)")
+                        }
                     }
                     
                 }
